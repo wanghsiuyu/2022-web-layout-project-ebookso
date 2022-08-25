@@ -7278,7 +7278,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    max-width: 400px;
     margin: 1.75rem auto;
   }
   .modal-dialog-scrollable {
@@ -17486,12 +17486,6 @@ a:hover {
 
 .btn-outline-secondary:hover {
   color: #fff;
-}
-
-@media (min-width: 576px) {
-  .modal-dialog {
-    max-width: 400px;
-  }
 }
 
 @media (min-width: 768px) {
