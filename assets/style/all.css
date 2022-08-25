@@ -17455,11 +17455,11 @@ a:hover {
 }
 
 .b1 {
-  border: 1px solid black;
+  border: 5px solid red;
 }
 
 .b1-red {
-  border: 1px solid red;
+  border: 1px solid green;
 }
 
 .lh-0 {
@@ -17494,6 +17494,24 @@ a:hover {
   }
 }
 
+@media (min-width: 768px) {
+  .position-md-relative {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .position-md-absolute {
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .h2-md {
+    font-size: 2.5rem;
+  }
+}
+
 .banner {
   background-image: url(../images/banner-lg-fix.jpg);
   width: 100%;
@@ -17503,6 +17521,7 @@ a:hover {
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
+  background-attachment: fixed;
 }
 
 @media (min-width: 992px) {
@@ -17519,6 +17538,34 @@ h1, .h1 {
 @media (min-width: 992px) {
   h1, .h1 {
     text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .height-md-475 {
+    height: 475px;
+  }
+}
+
+.steps {
+  background-image: url(../images/bookcase-plant.jpg);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+
+@media (min-width: 768px) {
+  .card-hover:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transform: translateY(-5px) scale(1.05);
+        -ms-transform: translateY(-5px) scale(1.05);
+            transform: translateY(-5px) scale(1.05);
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 }
 
