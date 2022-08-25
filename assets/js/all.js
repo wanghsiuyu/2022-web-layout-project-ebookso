@@ -36,6 +36,6 @@ AOS.init({
 });
 $(window).scroll(function () {
   var scrolledY = $(window).scrollTop();
-  $('#container').css('background-position', 'left ' + scrolledY + 'px');
+  $('.banner').css('background-position', 'center ' + scrolledY + 'px');
 });
 //# sourceMappingURL=all.js.map

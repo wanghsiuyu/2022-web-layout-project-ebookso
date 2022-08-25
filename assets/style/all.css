@@ -17519,7 +17519,7 @@ a:hover {
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 @media (min-width: 992px) {
