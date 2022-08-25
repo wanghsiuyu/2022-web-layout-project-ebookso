@@ -4,21 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Boostrap Index</title>
+    <title>布客搜 | 首頁</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/iconify/2.2.1/iconify.d.ts"
     />
     <link rel="stylesheet" href="./assets/style/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary pt-3 pb-3">
+      <div class="container-md">
+        <a class="navbar-brand d-none d-md-block" href="./index.html"><img src="./assets/images/LOGO-lg.png" alt="logo" title="首頁" width="124" height="44"/></a>
+        <a class="navbar-brand d-md-none" href="./index.html"><img src="./assets/images/LOGO-sm.png" alt="logo" width="98" height="30" /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -29,104 +44,245 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+            <li class="nav-item text-center d-none d-md-block">
+              <a class="nav-link pe-md-5" aria-current="page" href="#"
+                >搜尋<i class="fa fa-magnifying-glass ms-1"></i
+                ></a
               >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-link ps-0 pe-0 d-none d-md-block">|</li>
+            <li class="nav-item text-center">
+              <a class="nav-link ps-md-5 pe-md-5" href="#">註冊<i class="fas fa-user ms-1"></i></a
+                ></a>
+            </li>
+            <li class="nav-link ps-0 pe-0 d-none d-md-block">|</li>
+            <li class="nav-item text-center">
+              <a class="nav-link ps-md-5 pe-md-0" href="#">登入<i class="fa-solid fa-right-to-bracket ms-1"></i></a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex d-md-none justify-content-center">
             <input
-              class="form-control me-2"
+              class="form-control me-2 w-50 "
               type="search"
-              placeholder="Search"
+              placeholder="請輸入書名、作者"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button class="btn btn-outline-white" type="submit">開始比價</button>
           </form>
         </div>
       </div>
     </nav>
 
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<main>
+  <!-- banner start -->
+  <section class="banner mb-md-18">
+    <div class="container-md h-100">
+      <div class="row justify-content-md-center align-items-center h-100">
+        <div class="col-md-10">
+          <h1 class="text-white fw-bold lh-base mb-4 mb-md-11">
+            最方便的電子書比價平台<br /><span class="d-none d-md-block"
+              >打造屬於自己的線上書櫃</span
+            >
+          </h1>
+          <div class="row">
+            <div class="col-md-8 px-md-0 me-6 mb-4 mb-md-0">
+              <input
+                type="text"
+                class="form-control p-4 rounded-8"
+                placeholder="請輸入書名、作者"
+              />
+            </div>
+            <div class="col px-md-0 me-md-6">
+              <!-- Button trigger modal -->
+              <a
+                href="#"
+                class="btn btn-white d-flex justify-content-center align-items-center w-100 h-100 rounded-8"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                >選擇書店<img src="./assets/images/arrow.png" class="ms-2" alt="arrow-icon"
+              /></a>
+            </div>
+            <div class="col px-md-0">
+              <a
+                href="#"
+                class="btn btn-secondary text-white d-flex justify-content-center align-items-center w-100 h-l00 p-4 rounded-8"
+                >開始比價</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner end -->
+  <!-- feature start -->
+  <!-- 10 家電子書平台 -->
+  <section class="container-fluid mb-md-18" style="position: relative; height: 475px">
+    <div class="row">
+      <div
+        class="col-md-7 bg-cover"
+        style="
+          position: absolute;
+          background-image: url(./assets/images/e-reader.jpg);
+          top: 0;
+          bottom: 0;
+        "
+      ></div>
+    </div>
+    <div class="container h-100">
+      <div class="row justify-content-end align-items-center h-100">
+        <div class="col-md-4">
+          <h2 class="h3 fw-bold lh-base">支援多達10家電子書平台</h2>
+          <p>
+            支援博客來、Readmoo 讀墨、Google Play 圖書等 10 家主流電子書平台，讓您可以一鍵輕鬆比價
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 線上打造專屬書櫃 -->
+  <section class="container-fluid mb-md-18" style="position: relative; height: 475px">
+    <div class="row">
+      <div
+        class="col-md-7 bg-cover"
+        style="
+          position: absolute;
+          background-image: url(./assets/images/bookcase.png);
+          top: 0;
+          bottom: 0;
+          right: 0;
+        "
+      ></div>
+    </div>
+    <div class="container h-100">
+      <div class="row align-items-center h-100">
+        <div class="col-md-4">
+          <h2 class="h3 fw-bold lh-base">線上打造專屬書櫃</h2>
+          <p>在各家電子平台買了書，卻老是忘記在哪買嗎？ 用線上書櫃整合您所有書籍吧！</p>
+          <a href="#" class="btn btn-secondary text-white px-5 py-3 rounded-8">立即加入會員 </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- feature end -->
+</main>
+<!-- 選擇書店 Modal start-->
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title h4 fw-bold text-center" id="staticBackdropLabel">選擇書店</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        <div class="d-flex justify-content-center gap-4 gap-md-10">
+          <div class="">
+            <div>
+              <input type="checkbox" id="books" name="bookstore" value="博客來" checked />
+              <label for="books">博客來</label>
+            </div>
+            <div>
+              <input type="checkbox" id="readmoo" name="bookstore" value="Readmoo 讀墨" checked />
+              <label for="readmoo">Readmoo 讀墨</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="GooglePlay"
+                name="bookstore"
+                value="Google Play 圖書"
+                checked
+              />
+              <label for="GooglePlay">Google Play 圖書</label>
+            </div>
+            <div>
+              <input type="checkbox" id="kobo" name="bookstore" value="樂天 kobo" />
+              <label for="kobo">樂天 kobo</label>
+            </div>
+            <div>
+              <input type="checkbox" id="BookWalker" name="bookstore" value="BOOK WALKER" checked />
+              <label for="BookWalker">BOOK WALKER</label>
+            </div>
+            <div>
+              <input type="checkbox" id="taaze" name="bookstore" value="TAAZE 讀冊生活" />
+              <label for="taaze">TAAZE 讀冊生活</label>
+            </div>
+          </div>
+          <div class="">
+            <div>
+              <input type="checkbox" id="Hami" name="bookstore" value="Hami 書城" checked />
+              <label for="Hami">Hami 書城</label>
+            </div>
+            <div>
+              <input type="checkbox" id="Pubu" name="bookstore" value="Pubu 飽讀" />
+              <label for="Pubu">Pubu 飽讀</label>
+            </div>
+            <div>
+              <input type="checkbox" id="udn" name="bookstore" value="udn 讀書吧" checked />
+              <label for="udn">udn 讀書吧</label>
+            </div>
+            <div>
+              <input type="checkbox" id="MyBook" name="bookstore" value="MyBook 書城" checked />
+              <label for="MyBook">MyBook 書城</label>
+            </div>
+            <div>
+              <input type="checkbox" id="HyRead" name="bookstore" value="HyRead 電子書" />
+              <label for="HyRead">HyRead 電子書</label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                id="AmazonKindle"
+                name="bookstore"
+                value="Amazon Kindle"
+                checked
+              />
+              <label for="AmazonKindle">Amazon Kindle</label>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <div class="modal-footer justify-content-center">
+        <a
+          type="button"
+          class="btn btn-outline-secondary px-6 rounded-8 me-6"
+          data-bs-dismiss="modal"
+        >
+          取消
+        </a>
+        <a
+          type="button"
+          class="btn btn-secondary text-white px-6 rounded-8"
+          data-bs-dismiss="modal"
+        >
+          確認
+        </a>
       </div>
     </div>
   </div>
 </div>
+<!-- 選擇書店 Modal end-->
 
 
-    <footer class="footer">footer</footer>
-
+    <footer class="bg-primary pt-11 pb-11 pt-md-12 pb-md-12">
+      <ul class="list-unstyled d-flex justify-content-center mb-1">
+        <li><a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-3xl"></i></a></li>
+        <li><a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-3xl"></i></a></li>
+        <li><a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-3xl"></i></a></li>
+      </ul>
+      <p class="text-white text-center">@ 2022 ebookso.com｜ All Rights Reserved</p>
+    </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
