@@ -34,4 +34,8 @@ AOS.init({
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 
 });
+$(window).scroll(function () {
+  var scrolledY = $(window).scrollTop();
+  $('#container').css('background-position', 'left ' + scrolledY + 'px');
+});
 //# sourceMappingURL=all.js.map

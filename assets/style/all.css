@@ -17448,6 +17448,10 @@ fieldset:disabled .btn {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
+
 a:hover {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -17480,7 +17484,7 @@ a:hover {
 
 .bg-cover {
   background-position: center;
-  background-size: cover !important;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
