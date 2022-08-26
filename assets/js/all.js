@@ -33,5 +33,12 @@ AOS.init({
   // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 
+}); // bookmark 開關
+
+$(document).ready(function () {
+  $('.bookmark-btn').click(function (e) {
+    e.preventDefault();
+    $('.bookmark-icon').toggleClass('fa-regular');
+  });
 });
 //# sourceMappingURL=all.js.map

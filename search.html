@@ -101,16 +101,21 @@
             <!-- Button trigger modal -->
             <a
               href="#"
-              class="btn btn-white d-flex justify-content-center align-items-center w-100 h-100 rounded-8"
+              class="btn btn-white d-flex justify-content-center align-items-center h-100 rounded-8"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
-              >選擇書店<img src="./assets/images/arrow.png" class="ms-2" alt="arrow-icon"
+              >選擇書店<img
+                src="./assets/images/arrow.png"
+                class="ms-2"
+                alt="arrow-icon"
+                width="8.5"
+                height="16"
             /></a>
           </div>
           <div class="col">
             <a
               href="./search.html"
-              class="btn btn-secondary text-white d-flex justify-content-center align-items-center w-100 h-l00 p-3 rounded-8"
+              class="btn btn-secondary text-white d-flex justify-content-center align-items-center p-3 rounded-8"
               >開始比價</a
             >
           </div>
@@ -121,7 +126,12 @@
         <section class="mb-9">
           <p class="mb-4">最佳結果（3 筆）</p>
           <!-- media query -->
-          <div class="d-flex bg-white rounded-8 box-shadow p-6 mb-6">
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
             <a
               href="https://play.google.com/store/books/details/%E5%B8%83%E8%90%8A%E6%81%A9_%E5%85%8B%E9%87%8C%E6%96%AF%E6%B1%80_%E6%B1%BA%E6%96%B7%E7%9A%84%E6%BC%94%E7%AE%97?id=_jNiEAAAQBAJ"
               class="flex-shrink-0"
@@ -133,13 +143,13 @@
                 alt="book-img"
               />
             </a>
-            <div class="flex-grow-1 ms-6 d-flex flex-column">
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
               <a
                 href="https://play.google.com/store/books/details/%E5%B8%83%E8%90%8A%E6%81%A9_%E5%85%8B%E9%87%8C%E6%96%AF%E6%B1%80_%E6%B1%BA%E6%96%B7%E7%9A%84%E6%BC%94%E7%AE%97?id=_jNiEAAAQBAJ"
                 class="mb-auto result-card-link text-primary"
                 target="_blank"
               >
-                <div class="mb-2"><i class="fa-solid fa-store me-2"></i>Google Play 圖書</div>
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>Google Play 圖書</div>
                 <div class="h6 h4-md fw-bold mb-1">決斷的演算：預測、分析與好決定的11堂邏輯課</div>
                 <div class="d-none d-md-block">
                   為什麼電腦科學家說，賽局理論「奈許均衡」的地位言過其實，
@@ -147,9 +157,9 @@
                   亞馬遜書店「商務決策與問題解決類」、「電腦科學類」...
                 </div>
               </a>
-              <div class="d-flex">
-                <div class="me-auto">
-                  <i class="fa-solid fa-file-invoice-dollar me-2"></i
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
                   ><span class="text-danger h3 fw-bold lh-base">300</span>
                 </div>
                 <a
@@ -161,7 +171,12 @@
             </div>
           </div>
           <!-- media query -->
-          <div class="d-flex bg-white rounded-8 box-shadow p-6 mb-6">
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
             <a
               href="https://www.books.com.tw/products/E050042693?sloc=main"
               class="flex-shrink-0"
@@ -173,13 +188,13 @@
                 alt="book-img"
               />
             </a>
-            <div class="flex-grow-1 ms-6 d-flex flex-column">
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
               <a
                 href="https://www.books.com.tw/products/E050042693?sloc=main"
                 class="mb-auto result-card-link text-primary"
                 target="_blank"
               >
-                <div class="mb-2"><i class="fa-solid fa-store me-2"></i>博客來</div>
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>博客來</div>
                 <div class="h6 h4-md fw-bold mb-1">決斷的演算：預測、分析與好決定的11堂邏輯課</div>
                 <div class="d-none d-md-block">
                   為什麼電腦科學家說，賽局理論「奈許均衡」的地位言過其實，
@@ -187,9 +202,9 @@
                   亞馬遜書店「商務決策與問題解決類」、「電腦科學類」...
                 </div>
               </a>
-              <div class="d-flex">
-                <div class="me-auto">
-                  <i class="fa-solid fa-file-invoice-dollar me-2"></i
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">420</span>
                 </div>
                 <a
@@ -201,7 +216,12 @@
             </div>
           </div>
           <!-- media query -->
-          <div class="d-flex bg-white rounded-8 box-shadow p-6 mb-6">
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
             <a
               href="https://readmoo.com/book/210108942000101"
               class="flex-shrink-0"
@@ -213,13 +233,13 @@
                 alt="book-img"
               />
             </a>
-            <div class="flex-grow-1 ms-6 d-flex flex-column">
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
               <a
                 href="https://readmoo.com/book/210108942000101"
                 class="mb-auto result-card-link text-primary"
                 target="_blank"
               >
-                <div class="mb-2"><i class="fa-solid fa-store me-2"></i>Readmoo 讀墨</div>
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>Readmoo 讀墨</div>
                 <div class="h6 h4-md fw-bold mb-1">決斷的演算：預測、分析與好決定的11堂邏輯課</div>
                 <div class="d-none d-md-block">
                   為什麼電腦科學家說，賽局理論「奈許均衡」的地位言過其實，
@@ -227,9 +247,9 @@
                   亞馬遜書店「商務決策與問題解決類」、「電腦科學類」...
                 </div>
               </a>
-              <div class="d-flex">
-                <div class="me-auto">
-                  <i class="fa-solid fa-file-invoice-dollar me-2"></i
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">430</span>
                 </div>
                 <a
@@ -244,7 +264,12 @@
         <section class="mb-9">
           <p class="mb-4">相關搜尋（128 筆）</p>
           <!-- media query -->
-          <div class="d-flex bg-white rounded-8 box-shadow p-6 mb-6">
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
             <a
               href="https://www.books.com.tw/products/0010771263?sloc=main"
               class="flex-shrink-0"
@@ -256,13 +281,13 @@
                 alt="book-img"
               />
             </a>
-            <div class="flex-grow-1 ms-6 d-flex flex-column">
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
               <a
                 href="https://www.books.com.tw/products/0010771263?sloc=main"
                 class="mb-auto result-card-link text-primary"
                 target="_blank"
               >
-                <div class="mb-2"><i class="fa-solid fa-store me-2"></i>博客來</div>
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>博客來</div>
                 <div class="h6 h4-md fw-bold mb-1">演算法圖鑑</div>
                 <div class="d-none d-md-block">
                   讀再多文字解說都看不懂？沒關係，全部畫給你看，一次弄懂演算法到底是什麼！直觀理解，從基礎開始學習，一用就上手的演算法專書！
@@ -271,7 +296,7 @@
               </a>
               <div class="d-flex">
                 <div class="me-auto">
-                  <i class="fa-solid fa-file-invoice-dollar me-2"></i
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">368</span>
                 </div>
                 <a
@@ -283,7 +308,12 @@
             </div>
           </div>
           <!-- media query -->
-          <div class="d-flex bg-white rounded-8 box-shadow p-6 mb-6">
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
             <a
               href="https://www.taaze.tw/goods/14100077791.html"
               class="flex-shrink-0"
@@ -295,13 +325,13 @@
                 alt="book-img"
               />
             </a>
-            <div class="flex-grow-1 ms-6 d-flex flex-column">
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
               <a
                 href="https://www.taaze.tw/goods/14100077791.html"
                 class="mb-auto result-card-link text-primary"
                 target="_blank"
               >
-                <div class="mb-2"><i class="fa-solid fa-store me-2"></i>TAAZE 讀冊生活</div>
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>TAAZE 讀冊生活</div>
                 <div class="h6 h4-md fw-bold mb-1">圖說演算法：使用JavaScript</div>
                 <div class="d-none d-md-block">
                   零負擔理解演算法設計技巧零程式基礎也能快速上手採網頁前端開發工具JavaScript實作程式一本輕量級演算法，是您獲得程式設計新技能，提升自我價值的最好投資...
@@ -309,7 +339,7 @@
               </a>
               <div class="d-flex">
                 <div class="me-auto">
-                  <i class="fa-solid fa-file-invoice-dollar me-2"></i
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">400</span>
                 </div>
                 <a
@@ -321,13 +351,131 @@
             </div>
           </div>
         </section>
-
         <!-- search result end -->
-      </div>
     </div>
   </div>
 </main>
-
+ <!-- 提示加入會員 Modal start-->
+ <section
+ class="modal fade"
+ id="staticBackdrop"
+ data-bs-backdrop="static"
+ data-bs-keyboard="false"
+ tabindex="-1"
+ aria-labelledby="staticBackdropLabel"
+ aria-hidden="true"
+>
+ <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+   <div class="modal-content">
+     <div class="modal-header border-0">
+       <h5 class="modal-title h4 fw-bold text-center w-100" id="staticBackdropLabel">
+         選擇書店
+       </h5>
+       <button
+         type="button"
+         class="btn-close"
+         data-bs-dismiss="modal"
+         aria-label="Close"
+       ></button>
+     </div>
+     <div class="modal-body">
+       <div class="d-flex justify-content-center gap-4 gap-md-10">
+         <div>
+           <div class="mb-1">
+             <input type="checkbox" id="books" name="bookstore" value="博客來" checked />
+             <label for="books">博客來</label>
+           </div>
+           <div class="mb-1">
+             <input
+               type="checkbox"
+               id="readmoo"
+               name="bookstore"
+               value="Readmoo 讀墨"
+               checked
+             />
+             <label for="readmoo">Readmoo 讀墨</label>
+           </div>
+           <div class="mb-1">
+             <input
+               type="checkbox"
+               id="GooglePlay"
+               name="bookstore"
+               value="Google Play 圖書"
+               checked
+             />
+             <label for="GooglePlay">Google Play 圖書</label>
+           </div>
+           <div class="mb-1">
+             <input type="checkbox" id="kobo" name="bookstore" value="樂天 kobo" />
+             <label for="kobo">樂天 kobo</label>
+           </div>
+           <div class="mb-1">
+             <input
+               type="checkbox"
+               id="BookWalker"
+               name="bookstore"
+               value="BOOK WALKER"
+               checked
+             />
+             <label for="BookWalker">BOOK WALKER</label>
+           </div>
+           <div>
+             <input type="checkbox" id="taaze" name="bookstore" value="TAAZE 讀冊生活" />
+             <label for="taaze">TAAZE 讀冊生活</label>
+           </div>
+         </div>
+         <div>
+           <div class="mb-1">
+             <input type="checkbox" id="Hami" name="bookstore" value="Hami 書城" checked />
+             <label for="Hami">Hami 書城</label>
+           </div>
+           <div class="mb-1">
+             <input type="checkbox" id="Pubu" name="bookstore" value="Pubu 飽讀" />
+             <label for="Pubu">Pubu 飽讀</label>
+           </div>
+           <div class="mb-1">
+             <input type="checkbox" id="udn" name="bookstore" value="udn 讀書吧" checked />
+             <label for="udn">udn 讀書吧</label>
+           </div>
+           <div class="mb-1">
+             <input
+               type="checkbox"
+               id="MyBook"
+               name="bookstore"
+               value="MyBook 書城"
+               checked
+             />
+             <label for="MyBook">MyBook 書城</label>
+           </div>
+           <div class="mb-1">
+             <input type="checkbox" id="HyRead" name="bookstore" value="HyRead 電子書" />
+             <label for="HyRead">HyRead 電子書</label>
+           </div>
+           <div>
+             <input
+               type="checkbox"
+               id="AmazonKindle"
+               name="bookstore"
+               value="Amazon Kindle"
+               checked
+             />
+             <label for="AmazonKindle">Amazon Kindle</label>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="modal-footer justify-content-center border-0">
+       <a class="btn btn-outline-secondary px-6 rounded-8 me-6" data-bs-dismiss="modal">
+         取消
+       </a>
+       <a class="btn btn-secondary text-white px-6 rounded-8" data-bs-dismiss="modal">
+         確認
+       </a>
+     </div>
+   </div>
+ </div>
+</section>
+<!-- 提示加入會員 Modal end-->
 <!-- footer start  -->
     <footer class="bg-primary pt-6 pb-6 pt-md-12 pb-md-12">
       <ul class="list-unstyled d-flex justify-content-center mb-1">
@@ -339,7 +487,7 @@
     </footer>
     <!-- footer end -->
     <!-- 選擇書店 Modal start-->
-<div
+<section
 class="modal fade"
 id="staticBackdrop"
 data-bs-backdrop="static"
@@ -428,7 +576,7 @@ aria-hidden="true"
     </div>
   </div>
 </div>
-</div>
+</section>
 <!-- 選擇書店 Modal end-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
