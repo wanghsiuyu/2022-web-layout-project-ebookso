@@ -17513,17 +17513,17 @@ a:hover {
 .banner {
   background-image: url(../images/banner-lg-fix.jpg);
   width: 100%;
-  height: 600px;
+  height: 628px;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center top;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
-  background-attachment: scroll;
 }
 
 @media (min-width: 992px) {
   .banner {
+    background-attachment: fixed;
     height: calc(100vh - 78px);
     background-color: rgba(0, 0, 0, 0.2);
   }
