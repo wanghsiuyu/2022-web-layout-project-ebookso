@@ -40,5 +40,28 @@ $(document).ready(function () {
     e.preventDefault();
     $('.bookmark-icon').toggleClass('fa-regular');
   });
-});
+}); //顯示密碼toggle
+
+function showPassword() {
+  var x = document.getElementById('password');
+
+  if (x.type === 'password') {
+    x.type = 'text';
+  } else {
+    x.type = 'password';
+  } // toggle the icon
+
+
+  document.getElementById('eye-icon').classList.toggle('fa-eye-slash');
+} //圖片上傳按鈕
+
+
+var fileBtn = document.querySelector("#fileBtn");
+var fileInput = document.querySelector("#fileInput");
+fileBtn.addEventListener('click', fileUpload);
+
+function fileUpload(e) {
+  e.preventDefault();
+  fileInput.click();
+}
 //# sourceMappingURL=all.js.map

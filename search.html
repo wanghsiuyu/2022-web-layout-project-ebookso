@@ -30,8 +30,8 @@
 
   <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary pt-3 pb-3" >
-      <div class="container-md" data-aos="fade-left">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-primary pt-3 pb-3" >
+      <div class="container-md">
         <a class="navbar-brand d-none d-md-block" href="./index.html"><img src="./assets/images/LOGO-lg.png" alt="logo" title="首頁" width="124" height="44"/></a>
         <a class="navbar-brand d-md-none" href="./index.html"><img src="./assets/images/LOGO-sm.png" alt="logo" width="98" height="30" /></a>
         <button
@@ -129,7 +129,7 @@
           <div
             class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
           >
-            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+            <a role="button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
               ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
             ></a>
             <a
@@ -162,10 +162,10 @@
                   <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
                   ><span class="text-danger h3 fw-bold lh-base">300</span>
                 </div>
-                <a
-                  href=""
-                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
-                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</a
+                <button
+                  type="button"
+                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
                 >
               </div>
             </div>
@@ -174,8 +174,8 @@
           <div
             class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
           >
-            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
-              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            <a role="button" aria-disabled="true" class="bookmark-btn d-md-none position-absolute disabled" style="top: 0; right: 30px" 
+              ><i class="fa fa-bookmark text-light fa-2xl"></i
             ></a>
             <a
               href="https://www.books.com.tw/products/E050042693?sloc=main"
@@ -207,10 +207,8 @@
                   <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">420</span>
                 </div>
-                <a
-                  href=""
-                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
-                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</a
+                <button type="button" class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2" aria-disabled="true" disabled 
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
                 >
               </div>
             </div>
@@ -252,10 +250,10 @@
                   <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">430</span>
                 </div>
-                <a
-                  href=""
+                <button type="button"  aria-disabled="true"
                   class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
-                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</a
+                  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
                 >
               </div>
             </div>
@@ -294,15 +292,15 @@
                   全圖像化 step by step，完整...
                 </div>
               </a>
-              <div class="d-flex">
-                <div class="me-auto">
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
                   <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">368</span>
                 </div>
-                <a
-                  href=""
+                <button type="button"  aria-disabled="true"
                   class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
-                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</a
+                  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
                 >
               </div>
             </div>
@@ -337,15 +335,15 @@
                   零負擔理解演算法設計技巧零程式基礎也能快速上手採網頁前端開發工具JavaScript實作程式一本輕量級演算法，是您獲得程式設計新技能，提升自我價值的最好投資...
                 </div>
               </a>
-              <div class="d-flex">
-                <div class="me-auto">
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
                   <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
                   ><span class="text-danger h3 fw-bold lh-base">400</span>
                 </div>
-                <a
-                  href=""
+                <button type="button"  aria-disabled="true"
                   class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
-                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</a
+                  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
                 >
               </div>
             </div>
@@ -358,19 +356,14 @@
  <!-- 提示加入會員 Modal start-->
  <section
  class="modal fade"
- id="staticBackdrop"
- data-bs-backdrop="static"
- data-bs-keyboard="false"
+ id="exampleModalToggle2"
  tabindex="-1"
- aria-labelledby="staticBackdropLabel"
+ aria-labelledby="exampleModalToggle2"
  aria-hidden="true"
 >
- <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+ <div class="modal-dialog modal-dialog-centered ">
    <div class="modal-content">
      <div class="modal-header border-0">
-       <h5 class="modal-title h4 fw-bold text-center w-100" id="staticBackdropLabel">
-         選擇書店
-       </h5>
        <button
          type="button"
          class="btn-close"
@@ -378,98 +371,14 @@
          aria-label="Close"
        ></button>
      </div>
-     <div class="modal-body">
-       <div class="d-flex justify-content-center gap-4 gap-md-10">
-         <div>
-           <div class="mb-1">
-             <input type="checkbox" id="books" name="bookstore" value="博客來" checked />
-             <label for="books">博客來</label>
-           </div>
-           <div class="mb-1">
-             <input
-               type="checkbox"
-               id="readmoo"
-               name="bookstore"
-               value="Readmoo 讀墨"
-               checked
-             />
-             <label for="readmoo">Readmoo 讀墨</label>
-           </div>
-           <div class="mb-1">
-             <input
-               type="checkbox"
-               id="GooglePlay"
-               name="bookstore"
-               value="Google Play 圖書"
-               checked
-             />
-             <label for="GooglePlay">Google Play 圖書</label>
-           </div>
-           <div class="mb-1">
-             <input type="checkbox" id="kobo" name="bookstore" value="樂天 kobo" />
-             <label for="kobo">樂天 kobo</label>
-           </div>
-           <div class="mb-1">
-             <input
-               type="checkbox"
-               id="BookWalker"
-               name="bookstore"
-               value="BOOK WALKER"
-               checked
-             />
-             <label for="BookWalker">BOOK WALKER</label>
-           </div>
-           <div>
-             <input type="checkbox" id="taaze" name="bookstore" value="TAAZE 讀冊生活" />
-             <label for="taaze">TAAZE 讀冊生活</label>
-           </div>
-         </div>
-         <div>
-           <div class="mb-1">
-             <input type="checkbox" id="Hami" name="bookstore" value="Hami 書城" checked />
-             <label for="Hami">Hami 書城</label>
-           </div>
-           <div class="mb-1">
-             <input type="checkbox" id="Pubu" name="bookstore" value="Pubu 飽讀" />
-             <label for="Pubu">Pubu 飽讀</label>
-           </div>
-           <div class="mb-1">
-             <input type="checkbox" id="udn" name="bookstore" value="udn 讀書吧" checked />
-             <label for="udn">udn 讀書吧</label>
-           </div>
-           <div class="mb-1">
-             <input
-               type="checkbox"
-               id="MyBook"
-               name="bookstore"
-               value="MyBook 書城"
-               checked
-             />
-             <label for="MyBook">MyBook 書城</label>
-           </div>
-           <div class="mb-1">
-             <input type="checkbox" id="HyRead" name="bookstore" value="HyRead 電子書" />
-             <label for="HyRead">HyRead 電子書</label>
-           </div>
-           <div>
-             <input
-               type="checkbox"
-               id="AmazonKindle"
-               name="bookstore"
-               value="Amazon Kindle"
-               checked
-             />
-             <label for="AmazonKindle">Amazon Kindle</label>
-           </div>
-         </div>
-       </div>
+     <div class="modal-body pb-0">
+      <p class="h5 mb-0 text-center lh-lg">加入會員即能擁有屬於自己<br>
+        的書櫃和待買清單</p>
      </div>
-     <div class="modal-footer justify-content-center border-0">
-       <a class="btn btn-outline-secondary px-6 rounded-8 me-6" data-bs-dismiss="modal">
-         取消
-       </a>
-       <a class="btn btn-secondary text-white px-6 rounded-8" data-bs-dismiss="modal">
-         確認
+     <div class="modal-footer justify-content-center pb-12 border-0">
+      
+       <a class="btn btn-secondary text-white px-6 rounded-8" href="./signup.html">
+        免費加入會員
        </a>
      </div>
    </div>
