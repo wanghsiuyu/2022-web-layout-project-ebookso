@@ -17693,13 +17693,6 @@ a:hover {
   background-attachment: fixed;
 }
 
-@media (min-width: 1200px) {
-  .px-xl-150 {
-    padding-right: 150px;
-    padding-left: 150px;
-  }
-}
-
 @media (min-width: 768px) {
   .card-hover:hover {
     -webkit-transform: scale(1.2);

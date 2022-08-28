@@ -63,5 +63,20 @@ fileBtn.addEventListener('click', fileUpload);
 function fileUpload(e) {
   e.preventDefault();
   fileInput.click();
+} //選擇書店-全選switch
+
+
+var selectAllBtn = document.querySelector("#select-all");
+var selectItem1 = document.querySelector("input[name=\"bookstore-filter\"]");
+var selectItem = document.querySelector(".form-check-input");
+console.log(selectItem);
+console.log('123');
+selectAllBtn.addEventListener('click', selectAll);
+
+function selectAll(e) {
+  selectItem.setAttribute.toggle('checked', 'checked');
+  console.log('1');
 }
+
+console.log(selectAll);
 //# sourceMappingURL=all.js.map

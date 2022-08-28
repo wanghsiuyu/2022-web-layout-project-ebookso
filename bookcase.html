@@ -88,6 +88,304 @@
     </nav>
 <!-- navbar end -->
     
+<div class="container">
+  <!-- 導覽 tab start -->
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-9">
+      <div
+        class="position-fixed d-flex justify-content-between align-items-end bg-light b1"
+        style="width: 966px"
+      >
+        <ul class="nav nav-tabs pt-20 b1" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#home"
+              type="button"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+            >
+              Home
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Profile
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+
+        <p class="b1 mb-0">Lorem ipsum dolor sit amet consectetur</p>
+      </div>
+    </div>
+  </div>
+  <!-- 導覽 tab end -->
+  <div class="row">
+    <div class="col-3">
+      <!-- aside start -->
+      <aside class="pe-8 position-fixed">
+        <!-- search in bookcase start -->
+        <section class="px-2 py-4 mb-10 b1" style="margin-top: 168px">
+          <h3 class="h5 mb-3 fw-bold"><i class="fa fa-magnifying-glass me-2"></i>在書櫃內搜尋</h3>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="請輸入書名、作者"
+          />
+        </section>
+        <!-- search in bookcase end -->
+        <!-- sort start -->
+        <section class="px-2 py-4 mb-10 b1">
+          <h3 class="h5 pb-3 mb-4 fw-bold border-bottom border-primary">
+            <i class="fa-solid fa-arrow-down-wide-short me-2"></i>排序
+          </h3>
+          <form class="px-1">
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sort"
+                value="bookstore"
+                id="bookstore"
+                checked
+              />
+              <label class="form-check-label" for="bookstore">依書店排序</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sort-by-time"
+                id="last-to-first"
+                value="last-to-first"
+                checked
+              />
+              <label class="form-check-label" for="last-to-first"> 加入時間（新到舊） </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sort-by-time"
+                id="first-to-last"
+                value="first-to-last"
+              />
+              <label class="form-check-label" for="first-to-last">加入時間（舊到新）</label>
+            </div>
+          </form>
+        </section>
+        <!-- sort end -->
+        <!-- bookstore filter start -->
+        <section class="px-2 py-4 mb-10 b1">
+          <h3 class="h5 pb-3 mb-4 fw-bold border-bottom border-primary">
+            <i class="fa-solid fa-filter me-2"></i>選擇書店
+          </h3>
+          <form class="px-1">
+            <div class="form-check form-switch mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="select-all"
+                checked
+              />
+              <label class="form-check-label" for="select-all">全選</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="books"
+                id="books"
+                checked
+              />
+              <label class="form-check-label" for="books">博客來</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="readmoo"
+                id="readmoo"
+                checked
+              />
+              <label class="form-check-label" for="readmoo">Readmoo 讀墨</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="GooglePlay"
+                id="GooglePlay"
+                checked
+              />
+              <label class="form-check-label" for="GooglePlay">Google Play 圖書</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="kobo"
+                id="kobo"
+              />
+              <label class="form-check-label" for="kobo">樂天 kobo</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="BookWalker"
+                id="BookWalker"
+                checked
+              />
+              <label class="form-check-label" for="BookWalker">BOOK WALKER</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="Taaze"
+                id="Taaze"
+              />
+              <label class="form-check-label" for="Taaze">TAAZE 讀冊生活</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="Hami"
+                id="Hami"
+                checked
+              />
+              <label class="form-check-label" for="Hami">Hami 書城</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="Pubu"
+                id="Pubu"
+              />
+              <label class="form-check-label" for="Pubu">Pubu 飽讀</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="udn"
+                id="udn"
+                checked
+              />
+              <label class="form-check-label" for="udn">udn 讀書吧</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="MyBook"
+                id="MyBook"
+                checked
+              />
+              <label class="form-check-label" for="MyBook">MyBook 書城</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="HyRead"
+                id="HyRead"
+              />
+              <label class="form-check-label" for="HyRead">HyRead 電子書</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="AmazonKindle"
+                id="AmazonKindle"
+              />
+              <label class="form-check-label" for="AmazonKindle">Amazon Kindle</label>
+            </div>
+          </form>
+        </section>
+        <!-- bookstore filter end -->
+      </aside>
+
+      <!-- aside end -->
+    </div>
+    <div class="col-9">
+      <main>
+        <!-- nav tabs start -->
+        <!-- nav tabs end -->
+
+        <div class="tab-content" id="myTabContent" style="min-height: calc(100vh - 250px)">
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            ...
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            ...
+          </div>
+          <div
+            class="tab-pane fade pt-20"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <p class="mt-20">123</p>
+          </div>
+        </div>
+        <!-- book-card-list start -->
+        <!-- book-card-list end -->
+      </main>
+    </div>
+  </div>
+</div>
+
 <!-- footer start  -->
     <footer class="bg-primary pt-6 pb-6 pt-md-12 pb-md-12">
       <ul class="list-unstyled d-flex justify-content-center mb-1">
