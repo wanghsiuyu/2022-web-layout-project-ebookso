@@ -1,0 +1,66 @@
+body {
+  overflow-x: hidden;
+}
+a:hover {
+  transition: all 0.3s ease;
+}
+.b1 {
+  border: 1px solid red;
+}
+.b1-red {
+  border: 1px solid green;
+}
+
+.lh-0 {
+  line-height: 0;
+}
+.fa-3xl {
+  font-size: 36px;
+}
+.hover-secondary:hover {
+  color: $secondary;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+.bg-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.btn-outline-secondary:hover {
+  color: $white;
+}
+.position-md-relative {
+  @include mobile() {
+    position: relative;
+  }
+}
+.position-md-absolute {
+  @include mobile() {
+    position: absolute;
+  }
+}
+.h2-md {
+  @include mobile() {
+    font-size: $h2-font-size;
+  }
+}
+.h4-md {
+  @include mobile() {
+    font-size: $h4-font-size;
+  }
+}
+.text-shadow {
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.box-shadow {
+  box-shadow: 0 2px 10px #00000014;
+}
+.img-cover {
+  object-fit: cover;
+}
+.cursor-pointer {
+  cursor: pointer;
+}

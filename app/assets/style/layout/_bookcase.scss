@@ -1,0 +1,18 @@
+.active {
+  border-bottom: 3px solid $primary !important;
+}
+
+.nav-tabs .nav-link:focus {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-color: transparent;
+    border-bottom: 3px solid $primary;
+    transition: all 0.2s ease;
+    //border-color: transparent;
+    opacity: 0.8;
+  }
+}

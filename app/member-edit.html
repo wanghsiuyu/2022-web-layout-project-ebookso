@@ -1,0 +1,150 @@
+---
+title: 編輯基本資料
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <section class="container py-10 py-md-20">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2 class="h4 fw-bold">基本資料</h2>
+        <hr class="mb-6" />
+      </div>
+    </div>
+    <div class="mb-6 text-center">
+      <div class="position-relative d-inline-block">
+        <img src="./assets/images/avatar.png" class="d-none d-md-block" alt="avatar" />
+        <img src="./assets/images/avatar-sm.png" class="d-md-none" alt="avatar-sm" />
+        <a href="#" class="" id="fileBtn">
+          <img
+            src="./assets/images/Camera.png"
+            alt="camera"
+            class="camera-position position-absolute"
+            width="60"
+            height="60"
+          />
+        </a>
+      </div>
+      <input type="file" id="fileInput" accept="image/*" hidden />
+    </div>
+    <div class="rounded-circle"></div>
+    <form class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="mb-3">
+          <label for="account" class="form-label">會員帳號 ID（不可修改）</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input
+              type="text"
+              id="account"
+              class="form-control bg-white"
+              placeholder="winwinWu008"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+              disabled
+            />
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">修改密碼</label>
+          <div class="position-relative">
+            <input type="password" class="form-control mb-1" id="password" value="12345678" />
+            <i
+              class="fa-solid fa-eye cursor-pointer position-absolute"
+              id="eye-icon"
+              onclick="showPassword()"
+              style="top: 30%; right: 12px"
+            ></i>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="nickname" class="form-label">暱稱</label>
+          <input type="text" class="form-control" id="nickname" value="角落啃書人" />
+        </div>
+        <div class="mb-3">
+          <label for="birthday" class="form-label">出生日期</label>
+          <input
+            type="date"
+            class="form-control"
+            id="birthday"
+            name="birthday"
+            value="1997-10-05"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label w-100">性別</label>
+          <div class="px-3">
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="male"
+                name="gender"
+                value="male"
+                checked
+              />
+              <label for="male" class="form-check-label">男性</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                class="form-check-input"
+                id="female"
+                name="gender"
+                value="female"
+              />
+              <label for="female" class="form-check-label">女性</label>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">電子郵件</label>
+          <input type="email" class="form-control" id="email" value="book123@mail.com" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">現居城市</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>高雄</option>
+            <option value="台北">台北</option>
+            <option value="台中">台中</option>
+            <option value="台南">台南</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="introduction" class="form-label">自我介紹（限制 50 字以內）</label>
+          <textarea class="form-control" id="introduction" style="height: 150px; resize: none">
+你不是為了變得完美來到這個世上，你是為了認識自己和成為自己而來到這裡。</textarea
+          >
+        </div>
+        <div class="mb-3">
+          <label for="facebook" class="form-label">Facebook</label>
+          <input
+            type="text"
+            class="form-control"
+            id="facebook"
+            value="https://www.facebook.com/winwinWu008"
+          />
+        </div>
+        <div class="mb-6">
+          <label for="instagram" class="form-label">Instagram</label>
+          <input
+            type="text"
+            class="form-control"
+            id="instagram"
+            value="https://www.instagram.com/winwinWu008"
+          />
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <button class="btn btn-outline-secondary rounded-8 w-100">取消編輯</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-secondary text-white rounded-8 w-100">編輯完成</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>

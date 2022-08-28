@@ -1,0 +1,304 @@
+---
+title: 搜尋結果
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main>
+  <div class="container py-12 py-md-20">
+    <div class="row justify-content-lg-center">
+      <div class="col-lg-11">
+        <!-- search input start -->
+        <div class="row mb-6">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <input type="text" class="form-control px-4 py-3 rounded-8" placeholder="決斷的演算" />
+          </div>
+          <div class="col">
+            <!-- Button trigger modal -->
+            <a
+              href="#"
+              class="btn btn-white d-flex justify-content-center align-items-center h-100 rounded-8"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              >選擇書店<img
+                src="./assets/images/arrow.png"
+                class="ms-2"
+                alt="arrow-icon"
+                width="8.5"
+                height="16"
+            /></a>
+          </div>
+          <div class="col">
+            <a
+              href="./search.html"
+              class="btn btn-secondary text-white d-flex justify-content-center align-items-center p-3 rounded-8"
+              >開始比價</a
+            >
+          </div>
+        </div>
+        <!-- search input end -->
+        <!-- search result start -->
+        <p class="mb-8">共 131 筆結果</p>
+        <section class="mb-9">
+          <p class="mb-4">最佳結果（3 筆）</p>
+          <!-- media query -->
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a role="button" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
+            <a
+              href="https://play.google.com/store/books/details/%E5%B8%83%E8%90%8A%E6%81%A9_%E5%85%8B%E9%87%8C%E6%96%AF%E6%B1%80_%E6%B1%BA%E6%96%B7%E7%9A%84%E6%BC%94%E7%AE%97?id=_jNiEAAAQBAJ"
+              class="flex-shrink-0"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/27.jpg"
+                class="result-card-img img-cover bg-white box-shadow rounded-8"
+                alt="book-img"
+              />
+            </a>
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
+              <a
+                href="https://play.google.com/store/books/details/%E5%B8%83%E8%90%8A%E6%81%A9_%E5%85%8B%E9%87%8C%E6%96%AF%E6%B1%80_%E6%B1%BA%E6%96%B7%E7%9A%84%E6%BC%94%E7%AE%97?id=_jNiEAAAQBAJ"
+                class="mb-auto result-card-link text-primary"
+                target="_blank"
+              >
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>Google Play 圖書</div>
+                <div class="h6 h4-md fw-bold mb-1">決斷的演算：預測、分析與好決定的11堂邏輯課</div>
+                <div class="d-none d-md-block">
+                  為什麼電腦科學家說，賽局理論「奈許均衡」的地位言過其實，
+                  現代投資組合理論也不是資產配置的好建議？
+                  亞馬遜書店「商務決策與問題解決類」、「電腦科學類」...
+                </div>
+              </a>
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                  ><span class="text-danger h3 fw-bold lh-base">300</span>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
+                >
+              </div>
+            </div>
+          </div>
+          <!-- media query -->
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a role="button" aria-disabled="true" class="bookmark-btn d-md-none position-absolute disabled" style="top: 0; right: 30px" 
+              ><i class="fa fa-bookmark text-light fa-2xl"></i
+            ></a>
+            <a
+              href="https://www.books.com.tw/products/E050042693?sloc=main"
+              class="flex-shrink-0"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/27.jpg"
+                class="result-card-img img-cover bg-white box-shadow rounded-8"
+                alt="book-img"
+              />
+            </a>
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
+              <a
+                href="https://www.books.com.tw/products/E050042693?sloc=main"
+                class="mb-auto result-card-link text-primary"
+                target="_blank"
+              >
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>博客來</div>
+                <div class="h6 h4-md fw-bold mb-1">決斷的演算：預測、分析與好決定的11堂邏輯課</div>
+                <div class="d-none d-md-block">
+                  為什麼電腦科學家說，賽局理論「奈許均衡」的地位言過其實，
+                  現代投資組合理論也不是資產配置的好建議？
+                  亞馬遜書店「商務決策與問題解決類」、「電腦科學類」...
+                </div>
+              </a>
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
+                  ><span class="text-danger h3 fw-bold lh-base">420</span>
+                </div>
+                <button type="button" class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2" aria-disabled="true" disabled 
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
+                >
+              </div>
+            </div>
+          </div>
+          <!-- media query -->
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
+            <a
+              href="https://readmoo.com/book/210108942000101"
+              class="flex-shrink-0"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/27.jpg"
+                class="result-card-img img-cover bg-white box-shadow rounded-8"
+                alt="book-img"
+              />
+            </a>
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
+              <a
+                href="https://readmoo.com/book/210108942000101"
+                class="mb-auto result-card-link text-primary"
+                target="_blank"
+              >
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>Readmoo 讀墨</div>
+                <div class="h6 h4-md fw-bold mb-1">決斷的演算：預測、分析與好決定的11堂邏輯課</div>
+                <div class="d-none d-md-block">
+                  為什麼電腦科學家說，賽局理論「奈許均衡」的地位言過其實，
+                  現代投資組合理論也不是資產配置的好建議？
+                  亞馬遜書店「商務決策與問題解決類」、「電腦科學類」...
+                </div>
+              </a>
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
+                  ><span class="text-danger h3 fw-bold lh-base">430</span>
+                </div>
+                <button type="button"  aria-disabled="true"
+                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
+                  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mb-9">
+          <p class="mb-4">相關搜尋（128 筆）</p>
+          <!-- media query -->
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
+            <a
+              href="https://www.books.com.tw/products/0010771263?sloc=main"
+              class="flex-shrink-0"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/25.jpg"
+                class="result-card-img img-cover bg-white box-shadow rounded-8"
+                alt="book-img"
+              />
+            </a>
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
+              <a
+                href="https://www.books.com.tw/products/0010771263?sloc=main"
+                class="mb-auto result-card-link text-primary"
+                target="_blank"
+              >
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>博客來</div>
+                <div class="h6 h4-md fw-bold mb-1">演算法圖鑑</div>
+                <div class="d-none d-md-block">
+                  讀再多文字解說都看不懂？沒關係，全部畫給你看，一次弄懂演算法到底是什麼！直觀理解，從基礎開始學習，一用就上手的演算法專書！
+                  全圖像化 step by step，完整...
+                </div>
+              </a>
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
+                  ><span class="text-danger h3 fw-bold lh-base">368</span>
+                </div>
+                <button type="button"  aria-disabled="true"
+                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
+                  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
+                >
+              </div>
+            </div>
+          </div>
+          <!-- media query -->
+          <div
+            class="d-flex bg-white rounded-8 box-shadow p-4 p-md-6 mb-3 mb-md-6 position-relative"
+          >
+            <a href="#" class="bookmark-btn d-md-none position-absolute" style="top: 0; right: 30px"
+              ><i class="bookmark-icon fa fa-bookmark text-secondary fa-2xl"></i
+            ></a>
+            <a
+              href="https://www.taaze.tw/goods/14100077791.html"
+              class="flex-shrink-0"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/26.jpg"
+                class="result-card-img img-cover bg-white box-shadow rounded-8"
+                alt="book-img"
+              />
+            </a>
+            <div class="flex-grow-1 ms-4 ms-md-6 d-flex flex-column">
+              <a
+                href="https://www.taaze.tw/goods/14100077791.html"
+                class="mb-auto result-card-link text-primary"
+                target="_blank"
+              >
+                <div class="mb-2"><i class="fa-solid fa-store me-2 text-lightgray"></i>TAAZE 讀冊生活</div>
+                <div class="h6 h4-md fw-bold mb-1">圖說演算法：使用JavaScript</div>
+                <div class="d-none d-md-block">
+                  零負擔理解演算法設計技巧零程式基礎也能快速上手採網頁前端開發工具JavaScript實作程式一本輕量級演算法，是您獲得程式設計新技能，提升自我價值的最好投資...
+                </div>
+              </a>
+              <div class="d-flex justify-content-end justify-content-md-start">
+                <div class="me-md-auto">
+                  <i class="fa-solid fa-file-invoice-dollar me-2 text-lightgray"></i
+                  ><span class="text-danger h3 fw-bold lh-base">400</span>
+                </div>
+                <button type="button"  aria-disabled="true"
+                  class="btn btn-secondary text-white rounded-8 d-none d-md-block px-6 py-2"
+                  data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                  ><i class="fa-regular fa-bookmark me-2"></i>加入書櫃</button
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- search result end -->
+    </div>
+  </div>
+</main>
+ <!-- 提示加入會員 Modal start-->
+ <section
+ class="modal fade"
+ id="exampleModalToggle2"
+ tabindex="-1"
+ aria-labelledby="exampleModalToggle2"
+ aria-hidden="true"
+>
+ <div class="modal-dialog modal-dialog-centered ">
+   <div class="modal-content">
+     <div class="modal-header border-0">
+       <button
+         type="button"
+         class="btn-close"
+         data-bs-dismiss="modal"
+         aria-label="Close"
+       ></button>
+     </div>
+     <div class="modal-body pb-0">
+      <p class="h5 mb-0 text-center lh-lg">加入會員即能擁有屬於自己<br>
+        的書櫃和待買清單</p>
+     </div>
+     <div class="modal-footer justify-content-center pb-12 border-0">
+      
+       <a class="btn btn-secondary text-white px-6 rounded-8" href="./signup.html">
+        免費加入會員
+       </a>
+     </div>
+   </div>
+ </div>
+</section>
+<!-- 提示加入會員 Modal end-->

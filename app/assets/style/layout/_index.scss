@@ -1,5 +1,36 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.banner {
+  background-image: url(../images/banner-sm.png);
+  width: 100%;
+  height: 580px; //600
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  @include pad() {
+    background-image: url(../images/banner-lg-fix.jpg);
+    background-position: center bottom;
+    background-attachment: fixed;
+    height: calc(100vh - 78px);
+    background-color: rgb(209, 209, 209);
+  }
+}
+
+.height-md-475 {
+  @include mobile() {
+    height: 475px;
+  }
+}
+.steps {
+  background-image: url(../images/bookcase-plant.jpg);
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+.card-hover:hover {
+  @include mobile() {
+    transform: scale(1.2);
+    transform: translateY(-5px) scale(1.05);
+    transition: all 0.3s ease-out;
+  }
 }
