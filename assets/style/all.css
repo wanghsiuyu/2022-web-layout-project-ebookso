@@ -17746,4 +17746,25 @@ a:hover {
   }
 }
 
+.active {
+  border-bottom: 3px solid #224935 !important;
+}
+
+.nav-tabs .nav-link:focus {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link {
+  border-bottom: 3px solid transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+  border-bottom: 3px solid #224935;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  opacity: 0.8;
+}
+
 /*# sourceMappingURL=all.css.map */
