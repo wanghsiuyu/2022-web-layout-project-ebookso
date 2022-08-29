@@ -35,21 +35,23 @@ AOS.init({
 
 }); //change navbar background color
 
-var navbar = document.querySelector(".navbar-index"); //mobile
-
-if (window.innerWidth < 768) {
-  navbar.classList.add('bg-primary');
-} //desktop
-
+var navbar = document.querySelector(".navbar-index"); //desktop
 
 document.addEventListener('scroll', function () {
-  if (window.innerWidth >= 768 && window.pageYOffset >= 100) {
+  if (window.pageYOffset >= 100) {
     navbar.classList.add('bg-primary');
     navbar.classList.remove('bg-transparent');
-  } else if (window.innerWidth >= 768 && window.pageYOffset < 100) {
+  } else {
     navbar.classList.add('bg-transparent');
     navbar.classList.remove('bg-primary');
   }
+}); //mobile
+
+var navbarToggler = document.querySelector(".navbar-toggler");
+navbarToggler.addEventListener('click', function (e) {
+  e.preventDefault();
+  navbar.classList.add('bg-primary');
+  navbar.classList.remove('bg-transparent');
 }); // bookmark 開關
 
 $(document).ready(function () {
