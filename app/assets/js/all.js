@@ -14,10 +14,40 @@ AOS.init({
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
+  once: true, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
+
+//change navbar background color
+const navbar = document.querySelector(`.navbar-index`);
+//desktop
+document.addEventListener('scroll', () => {
+  if (window.pageYOffset >= 100) {
+    navbar.classList.add('bg-primary');
+    navbar.classList.remove('bg-transparent');
+  } else {
+    navbar.classList.add('bg-transparent');
+    navbar.classList.remove('bg-primary');
+  }
+});
+//mobile
+const navbarToggler = document.querySelector(`.navbar-toggler`);
+navbarToggler.addEventListener('click', (e) => {
+  e.preventDefault();
+  navbar.classList.add('bg-primary');
+  navbar.classList.remove('bg-transparent');
+});
+// navbarToggler.addEventListener('click', (e) => {
+//   if (navbarToggler.getAttribute('aria-expanded') == true) {
+//     navbar.classList.add('bg-primary');
+//     navbar.classList.remove('bg-transparent');
+//   } else {
+//     navbar.classList.add('bg-transparent');
+//     navbar.classList.remove('bg-primary');
+//   }
+// });
+
 // bookmark 開關
 $(document).ready(() => {
   $('.bookmark-btn').click(function (e) {

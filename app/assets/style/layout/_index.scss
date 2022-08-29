@@ -7,10 +7,10 @@
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   @include pad() {
-    background-image: url(../images/banner-lg-fix.jpg);
+    background-image: url(../images/banner-lg-fix-wide.jpg);
     background-position: center bottom;
     background-attachment: fixed;
-    height: calc(100vh - 78px);
+    height: 100vh; //
     background-color: rgb(209, 209, 209);
   }
 }
