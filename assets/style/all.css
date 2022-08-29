@@ -17659,6 +17659,12 @@ a:hover {
   cursor: pointer;
 }
 
+.transition-ease {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .banner {
   background-image: url(../images/banner-sm.png);
   width: 100%;
@@ -17671,10 +17677,10 @@ a:hover {
 
 @media (min-width: 992px) {
   .banner {
-    background-image: url(../images/banner-lg-fix.jpg);
+    background-image: url(../images/banner-lg-fix-wide.jpg);
     background-position: center bottom;
     background-attachment: fixed;
-    height: calc(100vh - 78px);
+    height: 100vh;
     background-color: #d1d1d1;
   }
 }

@@ -33,6 +33,23 @@ AOS.init({
   // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 
+}); //change navbar background color
+
+var navbar = document.querySelector(".navbar-index"); //mobile
+
+if (window.innerWidth < 768) {
+  navbar.classList.add('bg-primary');
+} //desktop
+
+
+document.addEventListener('scroll', function () {
+  if (window.innerWidth >= 768 && window.pageYOffset >= 100) {
+    navbar.classList.add('bg-primary');
+    navbar.classList.remove('bg-transparent');
+  } else if (window.innerWidth >= 768 && window.pageYOffset < 100) {
+    navbar.classList.add('bg-transparent');
+    navbar.classList.remove('bg-primary');
+  }
 }); // bookmark 開關
 
 $(document).ready(function () {
