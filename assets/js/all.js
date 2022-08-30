@@ -38,7 +38,7 @@ AOS.init({
 var navbar = document.querySelector(".navbar-index"); //desktop
 
 document.addEventListener('scroll', function () {
-  if (window.pageYOffset >= 100) {
+  if (window.pageYOffset > 0) {
     navbar.classList.add('bg-primary');
     navbar.classList.remove('bg-transparent');
   } else {

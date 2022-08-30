@@ -17686,7 +17686,7 @@ a:hover {
     background-position: center bottom;
     background-attachment: fixed;
     height: 100vh;
-    background-color: #d1d1d1;
+    background-color: rgba(93, 93, 93, 0.586);
   }
 }
 
@@ -17794,14 +17794,32 @@ a:hover {
   }
 }
 
-.card-active {
+.bookcase-card-active {
   background-color: #224935;
   padding: 4px 12px;
   border-radius: 12px;
 }
 
-.card-active i {
+.bookcase-card-active i {
   color: #fff;
+}
+
+.bookcase-tabs-fixed {
+  position: fixed;
+  top: 54px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+@media (min-width: 768px) {
+  .bookcase-tabs-fixed {
+    position: static;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
