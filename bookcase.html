@@ -88,18 +88,18 @@
   <div class="mb-19"></div>
 
   
+<!-- nav tabs start -->
 <div class="container">
-  <!-- nav tabs start -->
   <div class="row">
-    <div class="d-none d-xl-block col-xl-3">
+    <div class="d-none d-md-block col-md-3">
       <!-- <div class="bg-light" style="width: 328px; height: 130px"></div> -->
     </div>
-      <div class="col-xl-9 b1">
-        <div
-          class="bookcase-tabs-fixed d-flex justify-content-between align-items-end bg-light pb-1"
-        >
-          <ul class="nav nav-tabs pt-6 pt-md-20" id="myTab" role="tablist">
-            <li class="nav-item me-2 me-md-4" role="presentation">
+    <div class="col-md-9">
+      <div class="bookcase-tabs-fixed bg-light">
+        <!-- fixed第一排 -->
+        <div class="d-flex justify-content-between align-items-end mt-6 mt-md-20 mb-2">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item py-1 me-2 me-md-4" role="presentation">
               <button
                 class="nav-link h6 h4-md fw-bold text-primary px-1 active"
                 id="home-tab"
@@ -113,7 +113,7 @@
                 我的書櫃
               </button>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item py-1" role="presentation">
               <button
                 class="nav-link h6 h4-md fw-bold text-primary px-1"
                 id="profile-tab"
@@ -129,289 +129,458 @@
             </li>
           </ul>
           <div class="d-flex mb-2">
-            <a class="bookcase-card-active d-none d-md-block text-primary text-decoration-none me-4" type="button"
-              ><i class="fa-solid fa-pen-to-square me-1"></i><span class="text-white ">編輯-刪除</span></a
+            <a
+              class="bookcase-card-active d-none d-md-block text-primary text-decoration-none me-4"
+              type="button"
+              ><i class="fa-solid fa-pen-to-square me-1"></i
+              ><span class="text-white">編輯-刪除</span></a
             >
             <a class="bookcase-card-active me-1" type="button"><i class="fas fa-th-large"></i></a>
             <a class="bookcase-card-active" type="button"><i class="fa-solid fa-list"></i></a>
           </div>
         </div>
-      </div>
-    </div>
-    <!-- nav tabs end -->
-    <div class="row">
-      <div class="d-none d-xl-block col-xl-3">
-        <!-- aside start -->
-        <aside class="pe-8 mt-12">
-          <!-- search in bookcase start -->
-          <section class="px-2 py-4 mb-10">
-            <h3 class="h5 mb-3 fw-bold"><i class="fa fa-magnifying-glass me-2"></i>在書櫃內搜尋</h3>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="請輸入書名、作者"
-            />
-          </section>
-          <!-- search in bookcase end -->
-          <!-- sort start -->
-          <section class="px-2 py-4 mb-10">
-            <h3 class="h5 pb-3 mb-4 fw-bold border-bottom border-primary">
+        <!-- fixed第二排 -->
+        <div class="d-flex gap-2 mb-1">
+          <a class="d-md-none text-decoration-none text-primary" type="button">
+            <h3 class="h6 mb-0 fw-bold p-1 border border-2 border-primary rounded-8">
               <i class="fa-solid fa-arrow-down-wide-short me-2"></i>排序
             </h3>
-            <form class="px-1">
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="sort"
-                  value="bookstore"
-                  id="bookstore"
-                  checked
-                />
-                <label class="form-check-label" for="bookstore">依書店排序</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="sort-by-time"
-                  id="last-to-first"
-                  value="last-to-first"
-                  checked
-                />
-                <label class="form-check-label" for="last-to-first"> 加入時間（新到舊） </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="sort-by-time"
-                  id="first-to-last"
-                  value="first-to-last"
-                />
-                <label class="form-check-label" for="first-to-last">加入時間（舊到新）</label>
-              </div>
-            </form>
-          </section>
-          <!-- sort end -->
-          <!-- bookstore filter start -->
-          <section class="px-2 py-4 mb-10">
-            <h3 class="h5 pb-3 mb-4 fw-bold border-bottom border-primary">
-              <i class="fa-solid fa-filter me-2"></i>選擇書店
+          </a>
+          <a class="d-md-none text-decoration-none text-primary" type="button">
+            <h3 class="h6 mb-0 fw-bold p-1 border border-2 border-primary rounded-8">
+              <i class="fa-solid fa-filter me-2"></i>書店
             </h3>
-            <form class="px-1">
-              <div class="form-check form-switch mb-4 d-none">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="select-all"
-                  checked
-                />
-                <label class="form-check-label" for="select-all">全選</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="books"
-                  id="books"
-                  checked
-                />
-                <label class="form-check-label" for="books">博客來</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="readmoo"
-                  id="readmoo"
-                  checked
-                />
-                <label class="form-check-label" for="readmoo">Readmoo 讀墨</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="GooglePlay"
-                  id="GooglePlay"
-                  checked
-                />
-                <label class="form-check-label" for="GooglePlay">Google Play 圖書</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="kobo"
-                  id="kobo"
-                />
-                <label class="form-check-label" for="kobo">樂天 kobo</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="BookWalker"
-                  id="BookWalker"
-                  checked
-                />
-                <label class="form-check-label" for="BookWalker">BOOK WALKER</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="Taaze"
-                  id="Taaze"
-                />
-                <label class="form-check-label" for="Taaze">TAAZE 讀冊生活</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="Hami"
-                  id="Hami"
-                  checked
-                />
-                <label class="form-check-label" for="Hami">Hami 書城</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="Pubu"
-                  id="Pubu"
-                />
-                <label class="form-check-label" for="Pubu">Pubu 飽讀</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="udn"
-                  id="udn"
-                  checked
-                />
-                <label class="form-check-label" for="udn">udn 讀書吧</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="MyBook"
-                  id="MyBook"
-                  checked
-                />
-                <label class="form-check-label" for="MyBook">MyBook 書城</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="HyRead"
-                  id="HyRead"
-                />
-                <label class="form-check-label" for="HyRead">HyRead 電子書</label>
-              </div>
-              <div class="form-check mb-4">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  name="bookstore-filter"
-                  value="AmazonKindle"
-                  id="AmazonKindle"
-                />
-                <label class="form-check-label" for="AmazonKindle">Amazon Kindle</label>
-              </div>
-            </form>
-          </section>
-          <!-- bookstore filter end -->
-        </aside>
-        <!-- aside end -->
+          </a>
+          <a class="bookcase-card-active d-md-none text-primary text-decoration-none" type="button"
+            ><i class="fa-solid fa-pen-to-square me-1"></i>
+            <span class="text-white">編輯-刪除</span>
+          </a>
+        </div>
       </div>
-      <div class="col-xl-9 b1">
-        <main>
-          <div class="tab-content" id="myTabContent">
-            <!--我的書櫃內容 start-->
-            <div
-              class="tab-pane fade show active"
-              id="home"
-              role="tabpanel"
-              aria-labelledby="home-tab"
-            >
-              <p class="mt-12">共 83 本</p>
-              <div class="row row-cols-3 row-cols-xl-4 g-4">
-                <div class="col">
-                  <div class="card">
-                    <img src="./assets/images/25.jpg" class="card-img-top bookcase-card-img" alt="book-img" />
-                    <div class="card-body p-6">
-                      <h5 class="card-title h6"><i class="fa-solid fa-store me-2 text-lightgray"></i>Google Play 圖書</h5>
-                      <p class="card-text">演算法圖鑑</p>
-                    </div>
+    </div>
+  </div>
+</div>
+<!-- nav tabs end -->
+<div class="container">
+  <div class="row">
+    <div class="d-none d-md-block col-md-3">
+      <!-- aside start -->
+      <aside class="pe-8 mt-12">
+        <!-- search in bookcase start -->
+        <section class="px-2 pt-1 pb-4 mb-10">
+          <h3 class="h5 mb-3 fw-bold"><i class="fa fa-magnifying-glass me-2"></i>在書櫃內搜尋</h3>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="請輸入書名、作者"
+          />
+        </section>
+        <!-- search in bookcase end -->
+        <!-- sort start -->
+        <section class="px-2 py-4 mb-10">
+          <h3 class="h5 pb-3 mb-4 fw-bold border-bottom border-primary">
+            <i class="fa-solid fa-arrow-down-wide-short me-2"></i>排序
+          </h3>
+          <form class="px-1">
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="sort"
+                value="bookstore"
+                id="bookstore"
+                checked
+              />
+              <label class="form-check-label" for="bookstore">依書店排序</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sort-by-time"
+                id="last-to-first"
+                value="last-to-first"
+                checked
+              />
+              <label class="form-check-label" for="last-to-first"> 加入時間（新到舊） </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sort-by-time"
+                id="first-to-last"
+                value="first-to-last"
+              />
+              <label class="form-check-label" for="first-to-last">加入時間（舊到新）</label>
+            </div>
+          </form>
+        </section>
+        <!-- sort end -->
+        <!-- bookstore filter start -->
+        <section class="px-2 py-4 mb-10">
+          <h3 class="h5 pb-3 mb-4 fw-bold border-bottom border-primary">
+            <i class="fa-solid fa-filter me-2"></i>選擇書店
+          </h3>
+          <form class="px-1">
+            <div class="form-check form-switch mb-4 d-none">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="select-all"
+                checked
+              />
+              <label class="form-check-label" for="select-all">全選</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="books"
+                id="books"
+                checked
+              />
+              <label class="form-check-label" for="books">博客來</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="readmoo"
+                id="readmoo"
+                checked
+              />
+              <label class="form-check-label" for="readmoo">Readmoo 讀墨</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="GooglePlay"
+                id="GooglePlay"
+                checked
+              />
+              <label class="form-check-label" for="GooglePlay">Google Play 圖書</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="kobo"
+                id="kobo"
+              />
+              <label class="form-check-label" for="kobo">樂天 kobo</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="BookWalker"
+                id="BookWalker"
+                checked
+              />
+              <label class="form-check-label" for="BookWalker">BOOK WALKER</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="Taaze"
+                id="Taaze"
+              />
+              <label class="form-check-label" for="Taaze">TAAZE 讀冊生活</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="Hami"
+                id="Hami"
+                checked
+              />
+              <label class="form-check-label" for="Hami">Hami 書城</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="Pubu"
+                id="Pubu"
+              />
+              <label class="form-check-label" for="Pubu">Pubu 飽讀</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="udn"
+                id="udn"
+                checked
+              />
+              <label class="form-check-label" for="udn">udn 讀書吧</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="MyBook"
+                id="MyBook"
+                checked
+              />
+              <label class="form-check-label" for="MyBook">MyBook 書城</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="HyRead"
+                id="HyRead"
+              />
+              <label class="form-check-label" for="HyRead">HyRead 電子書</label>
+            </div>
+            <div class="form-check mb-4">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                name="bookstore-filter"
+                value="AmazonKindle"
+                id="AmazonKindle"
+              />
+              <label class="form-check-label" for="AmazonKindle">Amazon Kindle</label>
+            </div>
+          </form>
+        </section>
+        <!-- bookstore filter end -->
+      </aside>
+      <!-- aside end -->
+    </div>
+    <div class="col-md-9">
+      <main>
+        <div class="tab-content" id="myTabContent">
+          <!--我的書櫃內容 start-->
+          <div
+            class="tab-pane fade show active"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <p class="book-num">共 83 本</p>
+            <div class="row row-cols-3 row-cols-lg-4 g-4 mb-8 mb-md-16">
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                      </p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content.
-                      </p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
                   </div>
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="..." class="card-img-top" alt="..." />
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">
-                        This is a longer card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                      </p>
-                    </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card bg-light bg-md-white rounded-8 border-0">
+                  <img
+                    src="./assets/images/25.jpg"
+                    class="card-img-top bookcase-card-img"
+                    alt="book-img"
+                  />
+                  <div class="card-body p-1 p-md-6">
+                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                      >Google Play 圖書
+                    </h5>
+                    <p class="d-none d-md-block card-text">演算法圖鑑</p>
                   </div>
                 </div>
               </div>
             </div>
-            <!--我的書櫃內容 end-->
-            <!--待買清單內容 start-->
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-              ...
-            </div>
-            <!--待買清單內容 end-->
           </div>
-        </main>
-      </div>
+          <!--我的書櫃內容 end-->
+          <!--待買清單內容 start-->
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            ...
+          </div>
+          <!--待買清單內容 end-->
+        </div>
+      </main>
     </div>
   </div>
 </div>

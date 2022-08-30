@@ -17630,6 +17630,10 @@ a:hover {
   }
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+
 @media (min-width: 768px) {
   .h2-md {
     font-size: 2.5rem;
@@ -17639,6 +17643,12 @@ a:hover {
 @media (min-width: 768px) {
   .h4-md {
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .h6-md {
+    font-size: 1rem;
   }
 }
 
@@ -17668,6 +17678,12 @@ a:hover {
 
 .text-decoration-none {
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .bg-md-white {
+    background-color: #fff !important;
+  }
 }
 
 .banner {
@@ -17784,6 +17800,7 @@ a:hover {
   border-radius: 8px;
   width: 90px;
   height: 120px;
+  margin-bottom: 4px;
 }
 
 @media (min-width: 768px) {
@@ -17791,6 +17808,7 @@ a:hover {
     width: 153px;
     height: 192px;
     margin-top: 24px;
+    margin-bottom: 0;
   }
 }
 
@@ -17819,6 +17837,16 @@ a:hover {
     position: static;
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+.book-num {
+  margin-top: 116px;
+}
+
+@media (min-width: 768px) {
+  .book-num {
+    margin-top: 48px;
   }
 }
 
