@@ -17807,8 +17807,8 @@ a:hover {
 
 @media (min-width: 768px) {
   .bookcase-card-img {
-    width: 153px;
-    height: 192px;
+    width: 113px;
+    height: 150px;
     margin-top: 24px;
     margin-bottom: 0;
   }
@@ -17848,13 +17848,19 @@ a:hover {
 
 @media (min-width: 768px) {
   .book-num {
-    margin-top: 48px;
+    margin-top: 12px;
   }
 }
 
 .page-link {
   color: #224935;
   background-color: #e3dcd6;
+}
+
+.page-link:hover {
+  background-color: #224935;
+  border-color: #224935;
+  color: #fff;
 }
 
 /*# sourceMappingURL=all.css.map */
