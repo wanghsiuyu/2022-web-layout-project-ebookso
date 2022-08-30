@@ -27,7 +27,7 @@ AOS.init({
   // values from 0 to 3000, with step 50ms
   easing: 'ease',
   // default easing for AOS animations
-  once: false,
+  once: true,
   // whether animation should happen only once - while scrolling down
   mirror: false,
   // whether elements should animate out while scrolling past them
@@ -52,7 +52,16 @@ navbarToggler.addEventListener('click', function (e) {
   e.preventDefault();
   navbar.classList.add('bg-primary');
   navbar.classList.remove('bg-transparent');
-}); // bookmark 開關
+}); // navbarToggler.addEventListener('click', (e) => {
+//   if (navbarToggler.getAttribute('aria-expanded') == true) {
+//     navbar.classList.add('bg-primary');
+//     navbar.classList.remove('bg-transparent');
+//   } else {
+//     navbar.classList.add('bg-transparent');
+//     navbar.classList.remove('bg-primary');
+//   }
+// });
+// bookmark 開關
 
 $(document).ready(function () {
   $('.bookmark-btn').click(function (e) {

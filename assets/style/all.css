@@ -6009,11 +6009,12 @@ fieldset:disabled .btn {
       -ms-flex-direction: column;
           flex-direction: column;
   min-width: 0;
+  height: 100%;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
 }
 
 .card > hr {
@@ -6028,14 +6029,14 @@ fieldset:disabled .btn {
 
 .card > .list-group:first-child {
   border-top-width: 0;
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
 }
 
 .card > .list-group:last-child {
   border-bottom-width: 0;
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
 .card > .card-header + .list-group,
@@ -6075,7 +6076,7 @@ fieldset:disabled .btn {
 }
 
 .card-header:first-child {
-  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+  border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
 }
 
 .card-footer {
@@ -6085,7 +6086,7 @@ fieldset:disabled .btn {
 }
 
 .card-footer:last-child {
-  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px);
 }
 
 .card-header-tabs {
@@ -6112,7 +6113,7 @@ fieldset:disabled .btn {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px);
+  border-radius: calc(0.5rem - 1px);
 }
 
 .card-img,
@@ -6123,14 +6124,14 @@ fieldset:disabled .btn {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
 }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
 }
 
 .card-group > .card {
@@ -17665,6 +17666,10 @@ a:hover {
   transition: all 0.5s ease;
 }
 
+.text-decoration-none {
+  text-decoration: none;
+}
+
 .banner {
   background-image: url(../images/banner-sm.png);
   width: 100%;
@@ -17752,10 +17757,6 @@ a:hover {
   }
 }
 
-.active {
-  border-bottom: 3px solid #224935 !important;
-}
-
 .nav-tabs .nav-link:focus {
   border-color: transparent;
 }
@@ -17766,11 +17767,41 @@ a:hover {
 
 .nav-tabs .nav-link:hover {
   border-color: transparent;
-  border-bottom: 3px solid #224935;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   opacity: 0.8;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 3px solid #224935;
+}
+
+.bookcase-card-img {
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0px 6px #00000014;
+          box-shadow: 0 0px 6px #00000014;
+  border-radius: 8px;
+  width: 90px;
+  height: 120px;
+}
+
+@media (min-width: 768px) {
+  .bookcase-card-img {
+    width: 153px;
+    height: 192px;
+    margin-top: 24px;
+  }
+}
+
+.card-active {
+  background-color: #224935;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.card-active i {
+  color: #fff;
 }
 
 /*# sourceMappingURL=all.css.map */
