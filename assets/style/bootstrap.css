@@ -4016,11 +4016,12 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  height: 100%;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem; }
+  border-radius: 0.5rem; }
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -4029,12 +4030,12 @@ textarea.form-control-lg {
     border-bottom: inherit; }
     .card > .list-group:first-child {
       border-top-width: 0;
-      border-top-left-radius: calc(0.25rem - 1px);
-      border-top-right-radius: calc(0.25rem - 1px); }
+      border-top-left-radius: calc(0.5rem - 1px);
+      border-top-right-radius: calc(0.5rem - 1px); }
     .card > .list-group:last-child {
       border-bottom-width: 0;
-      border-bottom-right-radius: calc(0.25rem - 1px);
-      border-bottom-left-radius: calc(0.25rem - 1px); }
+      border-bottom-right-radius: calc(0.5rem - 1px);
+      border-bottom-left-radius: calc(0.5rem - 1px); }
   .card > .card-header + .list-group,
   .card > .list-group + .card-footer {
     border-top: 0; }
@@ -4062,14 +4063,14 @@ textarea.form-control-lg {
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .card-header:first-child {
-    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0; }
+    border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0; }
 
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125); }
   .card-footer:last-child {
-    border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px); }
+    border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px); }
 
 .card-header-tabs {
   margin-right: -0.5rem;
@@ -4091,7 +4092,7 @@ textarea.form-control-lg {
   bottom: 0;
   left: 0;
   padding: 1rem;
-  border-radius: calc(0.25rem - 1px); }
+  border-radius: calc(0.5rem - 1px); }
 
 .card-img,
 .card-img-top,
@@ -4100,13 +4101,13 @@ textarea.form-control-lg {
 
 .card-img,
 .card-img-top {
-  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px); }
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px); }
 
 .card-img,
 .card-img-bottom {
-  border-bottom-right-radius: calc(0.25rem - 1px);
-  border-bottom-left-radius: calc(0.25rem - 1px); }
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px); }
 
 .card-group > .card {
   margin-bottom: 0.75rem; }
