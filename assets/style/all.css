@@ -17582,6 +17582,14 @@ a:hover {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  opacity: 0.9;
+}
+
+button:hover {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.9;
 }
 
 .b1 {
@@ -17772,6 +17780,26 @@ a:hover {
     width: 153px;
     height: 192px;
   }
+}
+
+.fb-btn {
+  border: 1px solid #4267b2;
+  color: #4267b2;
+}
+
+.fb-btn:hover {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.g-btn {
+  border: 1px solid #db4437;
+  color: #db4437;
+}
+
+.g-btn:hover {
+  background-color: #db4437;
+  color: #fff;
 }
 
 .camera-position {
