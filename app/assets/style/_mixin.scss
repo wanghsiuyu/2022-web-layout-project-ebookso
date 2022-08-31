@@ -1,3 +1,8 @@
+@mixin text-hide {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+}
 @mixin mobile {
   @media (min-width: 768px) {
     @content;

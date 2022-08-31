@@ -1,0 +1,22 @@
+.fb-btn {
+  border: 1px solid #4267b2;
+  color: #4267b2;
+  &:hover {
+    background-color: #4267b2;
+    color: #fff;
+  }
+}
+.g-btn {
+  border: 1px solid #db4437;
+  color: #db4437;
+  &:hover {
+    background-color: #db4437;
+    color: #fff;
+  }
+}
+.main-height {
+  min-height: calc(100vh - 170px);
+  @include mobile() {
+    min-height: calc(100vh - 224px);
+  }
+}

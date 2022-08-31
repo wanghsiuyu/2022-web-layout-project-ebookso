@@ -1,6 +1,98 @@
 ---
-title: 登入
+title: 會員登入
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
+
+<main class="main-height">
+  <section class="container py-10 py-md-20">
+    <div class="row justify-content-center">
+      <div class="col-lg-5">
+        <h2 class="h4 fw-bold text-center">請登入帳號</h2>
+        <hr class="mb-6" />
+      </div>
+    </div>
+
+    <div class="rounded-circle"></div>
+    <form class="row justify-content-center">
+      <div class="col-lg-5">
+        <div class="mb-3">
+          <label for="account" class="form-label">帳號</label>
+          <input type="text" class="form-control" id="account" placeholder="請輸入帳號" />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">密碼</label>
+          <div class="position-relative">
+            <input
+              type="password"
+              class="form-control mb-1"
+              id="password"
+              placeholder="請輸入密碼"
+            />
+            <i
+              class="fa-solid fa-eye cursor-pointer position-absolute"
+              id="eye-icon"
+              onclick="showPassword()"
+              style="top: 30%; right: 12px"
+            ></i>
+          </div>
+        </div>
+        <div class="mb-3 d-flex justify-content-end">
+          <!-- Button trigger modal -->
+          <a
+            href="#"
+            class="text-primary"
+            data-bs-target="#exampleModalToggle2"
+            data-bs-toggle="modal"
+            >忘記密碼</a
+          >
+        </div>
+        <div class="d-grid gap-2 mb-8">
+          <!-- <button class="btn text-white" style="background-color: #db4437">
+            <i class="fab fa-google me-2"></i>使用 Google 帳號登入
+          </button>
+          <button class="btn text-white mb-3" style="background-color: #4267b2">
+            <i class="fab fa-facebook-f me-2"></i>使用 facebook 帳號登入
+          </button> -->
+          <button class="btn g-btn"><i class="fab fa-google me-2"></i>使用 Google 帳號登入</button>
+          <button class="btn fb-btn mb-3">
+            <i class="fab fa-facebook-f me-2"></i>使用 Facebook 帳號登入
+          </button>
+
+          <a href="./member.html" class="btn btn-secondary text-white">登入</a>
+        </div>
+        <hr class="mb-8" />
+        <div class="text-center">
+          還沒有帳號嗎？<a href="./signup.html" class="ms-1 text-primary">點我註冊</a>
+        </div>
+      </div>
+    </form>
+  </section>
+</main>
+<!-- 忘記密碼 Modal start-->
+<section
+  class="modal fade"
+  id="exampleModalToggle2"
+  tabindex="-1"
+  aria-labelledby="exampleModalToggle2"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pb-0">
+        <p class="h5 mb-0 text-center lh-lg">
+          按下確認，我們將會寄一封信件給您，並要求您重設密碼。
+        </p>
+      </div>
+      <div class="modal-footer justify-content-center pb-12 border-0">
+        <a class="btn btn-outline-secondary px-6 rounded-8 me-4" data-bs-dismiss="modal"> 取消 </a>
+        <a class="btn btn-secondary text-white px-6 rounded-8" data-bs-dismiss="modal"> 確認 </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 忘記密碼 Modal end-->
