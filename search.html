@@ -75,14 +75,21 @@
               ></a>
             </li>
           </ul>
-          <form class="d-flex d-md-none justify-content-center">
+          <form class="d-flex d-md-none justify-content-center gap-2">
             <input
-              class="form-control me-2 w-50"
+              class="form-control w-50"
               type="search"
               placeholder="請輸入書名、作者"
               aria-label="Search"
             />
-            <button class="btn btn-outline-white" type="submit">開始比價</button>
+            <a
+              class="btn btn-outline-white"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-solid fa-filter"></i>
+            </a>
+            <a href="./search.html" class="btn btn-outline-white">開始比價</a>
           </form>
         </div>
       </div>
@@ -391,19 +398,19 @@
 <!-- 提示加入會員 Modal end-->
 
     <!-- footer start  -->
-    <footer class="bg-primary pt-6 pb-6 pt-md-12 pb-md-12">
-      <ul class="list-unstyled d-flex justify-content-center gap-2 mb-2">
+    <footer class="bg-primary py-6 py-md-12">
+      <ul class="list-unstyled d-flex justify-content-center mb-3">
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-2xl"></i></a>
         </li>
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </li>
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-2xl"></i></a>
         </li>
       </ul>
-      <p class="text-white text-center">© 2022 ebookso.com｜ All Rights Reserved</p>
+      <p class="text-white text-center mb-0">© 2022 ebookso.com｜ All Rights Reserved</p>
     </footer>
     <!-- footer end -->
     <!-- 選擇書店 Modal start-->

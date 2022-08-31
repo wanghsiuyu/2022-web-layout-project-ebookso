@@ -75,14 +75,21 @@
               ></a>
             </li>
           </ul>
-          <form class="d-flex d-md-none justify-content-center">
+          <form class="d-flex d-md-none justify-content-center gap-2">
             <input
-              class="form-control me-2 w-50"
+              class="form-control w-50"
               type="search"
               placeholder="請輸入書名、作者"
               aria-label="Search"
             />
-            <button class="btn btn-outline-white" type="submit">開始比價</button>
+            <a
+              class="btn btn-outline-white"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-solid fa-filter"></i>
+            </a>
+            <a href="./search.html" class="btn btn-outline-white">開始比價</a>
           </form>
         </div>
       </div>
@@ -91,23 +98,230 @@
     <div class="mb-19"></div>
 
     
-<a href="./member-edit.html">更多</a>
+<main class="container py-10 py-md-20">
+  <div class="row justify-content-center">
+    <div class="col-md-10">
+      <!-- 基本資料 start -->
+      <section class="mb-11 mb-md-20">
+        <div class="d-flex justify-content-between align-items-end">
+          <h2 class="h4 fw-bold mb-0">基本資料</h2>
+          <a
+            href="./member-edit.html"
+            class="text-primary text-decoration-none text-decoration-hover"
+          >
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span class="">編輯</span>
+          </a>
+        </div>
+        <hr class="mb-6" />
+        <div class="d-flex flex-column flex-md-row">
+          <div class="flex-shrink-0 mx-auto">
+            <img src="./assets/images/avatar-sm.png" alt="avatar" />
+          </div>
+          <div class="flex-grow-1 mt-3 mt-md-0 ms-md-9 d-flex flex-column justify-content-between">
+            <ul class="list-unstyled text-center text-md-start">
+              <li class="mb-2">
+                <span class="h4 fw-bold me-md-3 lh-base">角落啃書人</span><br class="d-md-none" />
+                @winwinWu008
+              </li>
+              <li class="mb-2">
+                你不是為了變得完美來到這個世上，你是為了認識自己和成為自己而來到這裡。
+              </li>
+              <li><i class="fa-solid fa-location-dot me-2"></i><span>高雄, 台灣</span></li>
+            </ul>
+            <ul
+              class="list-unstyled d-flex gap-3 mb-1 justify-content-center justify-content-md-start"
+            >
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook fa-2xl text-primary"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram fa-2xl text-primary"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 基本資料 end -->
+
+      <!-- 我的書櫃 start -->
+      <section class="mb-11 mb-md-20">
+        <div class="d-flex justify-content-between align-items-end">
+          <h2 class="h4 fw-bold mb-0">我的書櫃<span class="h6 ms-5">共 63 本</span></h2>
+          <a href="./bookcase.html" class="text-primary text-decoration-none text-decoration-hover">
+            <span class="d-none d-md-inline-block">更多</span
+            ><i class="fa-solid fa-angles-right ms-1 d-none d-md-inline-block"></i
+            ><i class="fa-solid fa-angle-right d-md-none"></i>
+          </a>
+        </div>
+        <hr class="mb-6" />
+        <div class="row justify-content-center px-xl-5 row-cols-3 row-cols-md-4 g-xl-11">
+          <div class="col">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/01.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >博客來
+                </h5>
+                <p class="d-none d-md-block card-text">父母語言</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/02.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >博客來
+                </h5>
+                <p class="d-none d-md-block card-text">個人無限公司</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/03.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >博客來
+                </h5>
+                <p class="d-none d-md-block card-text">脆弱的力量</p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-xl-block">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/04.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >Readmoo 讀墨
+                </h5>
+                <p class="d-none d-md-block card-text">原子習慣</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 我的書櫃 end -->
+
+      <!-- 待買清單 start -->
+      <section class="mb-11 mb-md-20">
+        <div class="d-flex justify-content-between align-items-end">
+          <h2 class="h4 fw-bold mb-0">待買清單<span class="h6 ms-5">共 46 本</span></h2>
+          <a href="./bookcase.html" class="text-primary text-decoration-none text-decoration-hover">
+            <span class="d-none d-md-inline-block">更多</span
+            ><i class="fa-solid fa-angles-right ms-1 d-none d-md-inline-block"></i
+            ><i class="fa-solid fa-angle-right d-md-none"></i>
+          </a>
+        </div>
+        <hr class="mb-6" />
+        <div class="row justify-content-center px-xl-5 row-cols-3 row-cols-md-4 g-xl-11">
+          <div class="col">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/23.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >博客來
+                </h5>
+                <p class="d-none d-md-block card-text">精通JavaScript...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/21.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >博客來
+                </h5>
+                <p class="d-none d-md-block card-text">文藝少女的矽谷進擊</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/18.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >博客來
+                </h5>
+                <p class="d-none d-md-block card-text">高敏感是種天賦</p>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-xl-block">
+            <div class="card bg-light bg-md-white rounded-8 border-0">
+              <img
+                src="./assets/images/17.jpg"
+                class="card-img-top bookcase-card-img"
+                alt="book-img"
+              />
+              <div class="card-body p-1 p-md-6">
+                <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                  <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                  >Readmoo 讀墨
+                </h5>
+                <p class="d-none d-md-block card-text">醫療靈媒</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 待買清單 end -->
+    </div>
+  </div>
+</main>
 
 
     <!-- footer start  -->
-    <footer class="bg-primary pt-6 pb-6 pt-md-12 pb-md-12">
-      <ul class="list-unstyled d-flex justify-content-center gap-2 mb-2">
+    <footer class="bg-primary py-6 py-md-12">
+      <ul class="list-unstyled d-flex justify-content-center mb-3">
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-2xl"></i></a>
         </li>
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </li>
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-2xl"></i></a>
         </li>
       </ul>
-      <p class="text-white text-center">© 2022 ebookso.com｜ All Rights Reserved</p>
+      <p class="text-white text-center mb-0">© 2022 ebookso.com｜ All Rights Reserved</p>
     </footer>
     <!-- footer end -->
     <!-- 選擇書店 Modal start-->

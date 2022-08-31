@@ -17688,6 +17688,10 @@ button:hover {
   text-decoration: none;
 }
 
+.text-decoration-hover:hover {
+  text-decoration: underline !important;
+}
+
 @media (min-width: 768px) {
   .bg-md-white {
     background-color: #fff !important;
@@ -17695,9 +17699,9 @@ button:hover {
 }
 
 .logo {
-  background-image: url(../images/logo.png);
-  width: 98px;
-  height: 30px;
+  background-image: url(../images/logo-sm.png);
+  width: 106px;
+  height: 36px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -17708,6 +17712,7 @@ button:hover {
 
 @media (min-width: 768px) {
   .logo {
+    background-image: url(../images/logo.png);
     width: 124px;
     height: 44px;
   }
@@ -17800,6 +17805,16 @@ button:hover {
 .g-btn:hover {
   background-color: #db4437;
   color: #fff;
+}
+
+.main-height {
+  min-height: calc(100vh - 170px);
+}
+
+@media (min-width: 768px) {
+  .main-height {
+    min-height: calc(100vh - 224px);
+  }
 }
 
 .camera-position {

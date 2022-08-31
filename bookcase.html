@@ -75,14 +75,21 @@
               ></a>
             </li>
           </ul>
-          <form class="d-flex d-md-none justify-content-center">
+          <form class="d-flex d-md-none justify-content-center gap-2">
             <input
-              class="form-control me-2 w-50"
+              class="form-control w-50"
               type="search"
               placeholder="請輸入書名、作者"
               aria-label="Search"
             />
-            <button class="btn btn-outline-white" type="submit">開始比價</button>
+            <a
+              class="btn btn-outline-white"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-solid fa-filter"></i>
+            </a>
+            <a href="./search.html" class="btn btn-outline-white">開始比價</a>
           </form>
         </div>
       </div>
@@ -99,7 +106,7 @@
     </div>
     <div class="col-md-8">
       <div class="bookcase-tabs-fixed bg-light">
-        <!-- fixed第一排 -->
+        <!-- fixed 第一排 -->
         <div class="d-flex justify-content-between align-items-end mt-2 mb-2">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item py-1 me-2 me-md-4" role="presentation">
@@ -145,7 +152,7 @@
             <a href="#" class="bookcase-card-active"><i class="fa-solid fa-list"></i></a>
           </div>
         </div>
-        <!-- fixed第二排 -->
+        <!-- fixed 第二排 -->
         <div class="d-flex gap-2 mb-1">
           <!--offcanvas sort bottom-->
           <a
@@ -156,7 +163,7 @@
             aria-controls="offcanvasBottom"
           >
             <h3 class="h6 mb-0 fw-bold p-1 border border-2 border-primary rounded-8">
-              <i class="fa-solid fa-arrow-down-wide-short me-2"></i>排序
+              <i class="fa-solid fa-arrow-down-wide-short me-1"></i>排序
             </h3>
           </a>
           <!--offcanvas filter bottom-->
@@ -168,7 +175,7 @@
             aria-controls="offcanvasBottom"
           >
             <h3 class="h6 mb-0 fw-bold p-1 border border-2 border-primary rounded-8">
-              <i class="fa-solid fa-filter me-2"></i>書店
+              <i class="fa-solid fa-filter me-1"></i>書店
             </h3>
           </a>
           <a href="#" class="bookcase-card-active d-md-none text-primary text-decoration-none"
@@ -181,6 +188,7 @@
   </div>
 </div>
 <!-- nav tabs end -->
+
 <!-- content start -->
 <div class="container">
   <div class="row justify-content-md-center">
@@ -388,467 +396,461 @@
       </aside>
       <!-- aside end -->
     </div>
-    <div class="col-md-8">
-      <main>
-        <div class="tab-content" id="myTabContent">
-          <!--我的書櫃內容 start-->
-          <div
-            class="tab-pane fade show active"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-          >
-            <p class="book-num">共 63 本</p>
-            <div class="row row-cols-3 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-8 mb-md-16">
-              <!-- book start -->
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/01.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >博客來
-                    </h5>
-                    <p class="d-none d-md-block card-text">父母語言</p>
-                  </div>
+    <main class="col-md-8">
+      <div class="tab-content" id="myTabContent">
+        <!--我的書櫃分頁 start-->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <p class="book-num">共 63 本</p>
+          <div class="row row-cols-3 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-8 mb-md-16">
+            <!-- book start -->
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/01.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >博客來
+                  </h5>
+                  <p class="d-none d-md-block card-text">父母語言</p>
                 </div>
               </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/02.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >博客來
-                    </h5>
-                    <p class="d-none d-md-block card-text">個人無限公司</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/03.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >博客來
-                    </h5>
-                    <p class="d-none d-md-block card-text">脆弱的力量</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/04.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">原子習慣</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/05.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">超速學習</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/10.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">彼得原理</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/22.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">從hooks開始讓你的...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/19.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Google Play 圖書
-                    </h5>
-                    <p class="d-none d-md-block card-text">0 陷阱！0 誤解！8 天...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/20.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Google Play 圖書
-                    </h5>
-                    <p class="d-none d-md-block card-text">82年生的金智英</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/11.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >BOOK WALKER
-                    </h5>
-                    <p class="d-none d-md-block card-text">為什麼要睡覺</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/24.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >BOOK WALKER
-                    </h5>
-                    <p class="d-none d-md-block card-text">蛤蟆先生去看心理師</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/08.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >BOOK WALKER
-                    </h5>
-                    <p class="d-none d-md-block card-text">複利效應</p>
-                  </div>
-                </div>
-              </div>
-              <!-- book end -->
             </div>
-            <div class="row d-none d-md-block mb-20">
-              <!-- pagination start -->
-              <nav aria-label="Page">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#">6</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- pagination end -->
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/02.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >博客來
+                  </h5>
+                  <p class="d-none d-md-block card-text">個人無限公司</p>
+                </div>
+              </div>
             </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/03.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >博客來
+                  </h5>
+                  <p class="d-none d-md-block card-text">脆弱的力量</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/04.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">原子習慣</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/05.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">超速學習</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/10.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">彼得原理</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/22.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">從hooks開始讓你的...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/19.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Google Play 圖書
+                  </h5>
+                  <p class="d-none d-md-block card-text">0 陷阱！0 誤解！8 天...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/20.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Google Play 圖書
+                  </h5>
+                  <p class="d-none d-md-block card-text">82年生的金智英</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/11.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >BOOK WALKER
+                  </h5>
+                  <p class="d-none d-md-block card-text">為什麼要睡覺</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/24.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >BOOK WALKER
+                  </h5>
+                  <p class="d-none d-md-block card-text">蛤蟆先生去看心理師</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/08.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >BOOK WALKER
+                  </h5>
+                  <p class="d-none d-md-block card-text">複利效應</p>
+                </div>
+              </div>
+            </div>
+            <!-- book end -->
           </div>
-          <!--我的書櫃內容 end-->
-          <!--待買清單內容 start-->
-          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-            <p class="book-num">共 46 本</p>
-            <div class="row row-cols-3 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-8 mb-md-16">
-              <!-- book start -->
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/23.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >博客來
-                    </h5>
-                    <p class="d-none d-md-block card-text">精通JavaScript: 導入...</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/21.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >博客來
-                    </h5>
-                    <p class="d-none d-md-block card-text">文藝少女的矽谷進擊</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/18.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >博客來
-                    </h5>
-                    <p class="d-none d-md-block card-text">高敏感是種天賦</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/17.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">醫療靈媒</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/16.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">與神對話</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/27.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">決斷的演算</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/14.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Readmoo 讀墨
-                    </h5>
-                    <p class="d-none d-md-block card-text">正常人</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/12.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Google Play 圖書
-                    </h5>
-                    <p class="d-none d-md-block card-text">漫步華爾街</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/09.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >Google Play 圖書
-                    </h5>
-                    <p class="d-none d-md-block card-text">修練當下的力量</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/07.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >BOOK WALKER
-                    </h5>
-                    <p class="d-none d-md-block card-text">最高學以致用法</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/06.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >BOOK WALKER
-                    </h5>
-                    <p class="d-none d-md-block card-text">讀懂一本書</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card bg-light bg-md-white rounded-8 border-0">
-                  <img
-                    src="./assets/images/15.jpg"
-                    class="card-img-top bookcase-card-img"
-                    alt="book-img"
-                  />
-                  <div class="card-body p-1 p-md-6">
-                    <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
-                      <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
-                      >BOOK WALKER
-                    </h5>
-                    <p class="d-none d-md-block card-text">我需要你的愛，這是...</p>
-                  </div>
-                </div>
-              </div>
-              <!-- book end -->
-            </div>
-            <div class="row d-none d-md-block mb-20">
-              <!-- pagination start -->
-              <nav aria-label="Page">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                      <span aria-hidden="true">&raquo;</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-              <!-- pagination end -->
-            </div>
+          <div class="row d-none d-md-block mb-20">
+            <!-- pagination start -->
+            <nav aria-label="Page">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- pagination end -->
           </div>
-          <!--待買清單內容 end-->
         </div>
-      </main>
-    </div>
+        <!--我的書櫃分頁 end-->
+        <!--待買清單分頁 start-->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <p class="book-num">共 46 本</p>
+          <div class="row row-cols-3 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mb-8 mb-md-16">
+            <!-- book start -->
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/23.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >博客來
+                  </h5>
+                  <p class="d-none d-md-block card-text">精通JavaScript: 導入...</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/21.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >博客來
+                  </h5>
+                  <p class="d-none d-md-block card-text">文藝少女的矽谷進擊</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/18.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >博客來
+                  </h5>
+                  <p class="d-none d-md-block card-text">高敏感是種天賦</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/17.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">醫療靈媒</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/16.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">與神對話</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/27.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">決斷的演算</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/14.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Readmoo 讀墨
+                  </h5>
+                  <p class="d-none d-md-block card-text">正常人</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/12.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Google Play 圖書
+                  </h5>
+                  <p class="d-none d-md-block card-text">漫步華爾街</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/09.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >Google Play 圖書
+                  </h5>
+                  <p class="d-none d-md-block card-text">修練當下的力量</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/07.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >BOOK WALKER
+                  </h5>
+                  <p class="d-none d-md-block card-text">最高學以致用法</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/06.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >BOOK WALKER
+                  </h5>
+                  <p class="d-none d-md-block card-text">讀懂一本書</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card bg-light bg-md-white rounded-8 border-0">
+                <img
+                  src="./assets/images/15.jpg"
+                  class="card-img-top bookcase-card-img"
+                  alt="book-img"
+                />
+                <div class="card-body p-1 p-md-6">
+                  <h5 class="card-title fs-12 h6-md text-center text-md-start mb-0 mb-md-2">
+                    <i class="d-none d-md-inline-block fa-solid fa-store me-2 text-lightgray"></i
+                    >BOOK WALKER
+                  </h5>
+                  <p class="d-none d-md-block card-text">我需要你的愛，這是...</p>
+                </div>
+              </div>
+            </div>
+            <!-- book end -->
+          </div>
+          <div class="row d-none d-md-block mb-20">
+            <!-- pagination start -->
+            <nav aria-label="Page">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- pagination end -->
+          </div>
+        </div>
+        <!--待買清單分頁 end-->
+      </div>
+    </main>
   </div>
 </div>
 <!-- content end -->
+
 <!-- offcanvas start -->
 <!-- sort -->
 <div
@@ -914,7 +916,7 @@
   id="offcanvasBottomFilter"
   aria-labelledby="offcanvasBottomLabe2"
   data-bs-scroll="true"
-  style="height: 40vh"
+  style="height: 41vh"
 >
   <div class="offcanvas-header border-bottom">
     <h5 class="offcanvas-title h5 fw-bold text-center w-100" id="offcanvasBottomLabe2">
@@ -1071,19 +1073,19 @@
 
 
     <!-- footer start  -->
-    <footer class="bg-primary pt-6 pb-6 pt-md-12 pb-md-12">
-      <ul class="list-unstyled d-flex justify-content-center gap-2 mb-2">
+    <footer class="bg-primary py-6 py-md-12">
+      <ul class="list-unstyled d-flex justify-content-center mb-3">
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-youtube fa-2xl"></i></a>
         </li>
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
         </li>
         <li>
-          <a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-xl"></i></a>
+          <a href="#" class="p-2 hover-secondary"><i class="fa-solid fa-envelope fa-2xl"></i></a>
         </li>
       </ul>
-      <p class="text-white text-center">© 2022 ebookso.com｜ All Rights Reserved</p>
+      <p class="text-white text-center mb-0">© 2022 ebookso.com｜ All Rights Reserved</p>
     </footer>
     <!-- footer end -->
     <!-- 選擇書店 Modal start-->
