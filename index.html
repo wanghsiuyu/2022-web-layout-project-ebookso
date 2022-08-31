@@ -77,14 +77,21 @@
               ></a>
             </li>
           </ul>
-          <form class="d-flex d-md-none justify-content-center">
+          <form class="d-flex d-md-none justify-content-center gap-2">
             <input
               class="form-control me-2 w-50"
               type="search"
               placeholder="請輸入書名、作者"
               aria-label="Search"
             />
-            <button class="btn btn-outline-white" type="submit">開始比價</button>
+            <a
+              class="btn btn-outline-white"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <i class="fa-solid fa-filter"></i>
+            </a>
+            <a href="./search.html" class="btn btn-outline-white">開始比價</a>
           </form>
         </div>
       </div>
