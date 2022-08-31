@@ -133,28 +133,45 @@
           </ul>
           <div class="d-flex mb-2">
             <a
+              href="#"
               class="bookcase-card-active d-none d-md-block text-primary text-decoration-none me-4"
-              type="button"
-              ><i class="fa-solid fa-pen-to-square me-1"></i
-              ><span class="text-white">編輯-刪除</span></a
             >
-            <a class="bookcase-card-active me-1" type="button"><i class="fas fa-th-large"></i></a>
-            <a class="bookcase-card-active" type="button"><i class="fa-solid fa-list"></i></a>
+              <i class="fa-solid fa-pen-to-square me-1"></i>
+              <span class="text-white">編輯-刪除</span>
+            </a>
+            <a href="#" class="bookcase-card-active me-1">
+              <i class="fas fa-th-large"></i>
+            </a>
+            <a href="#" class="bookcase-card-active"><i class="fa-solid fa-list"></i></a>
           </div>
         </div>
         <!-- fixed第二排 -->
         <div class="d-flex gap-2 mb-1">
-          <a class="d-md-none text-decoration-none text-primary" type="button">
+          <!--offcanvas sort bottom-->
+          <a
+            href="#"
+            class="d-md-none text-decoration-none text-primary"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottomSort"
+            aria-controls="offcanvasBottom"
+          >
             <h3 class="h6 mb-0 fw-bold p-1 border border-2 border-primary rounded-8">
               <i class="fa-solid fa-arrow-down-wide-short me-2"></i>排序
             </h3>
           </a>
-          <a class="d-md-none text-decoration-none text-primary" type="button">
+          <!--offcanvas filter bottom-->
+          <a
+            href="#"
+            class="d-md-none text-decoration-none text-primary"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottomFilter"
+            aria-controls="offcanvasBottom"
+          >
             <h3 class="h6 mb-0 fw-bold p-1 border border-2 border-primary rounded-8">
               <i class="fa-solid fa-filter me-2"></i>書店
             </h3>
           </a>
-          <a class="bookcase-card-active d-md-none text-primary text-decoration-none" type="button"
+          <a href="#" class="bookcase-card-active d-md-none text-primary text-decoration-none"
             ><i class="fa-solid fa-pen-to-square me-1"></i>
             <span class="text-white">編輯-刪除</span>
           </a>
@@ -833,26 +850,19 @@
 </div>
 <!-- content end -->
 <!-- offcanvas start -->
-<button
-  class="btn btn-primary"
-  type="button"
-  data-bs-toggle="offcanvas"
-  data-bs-target="#offcanvasBottom"
-  aria-controls="offcanvasBottom"
->
-  Toggle bottom offcanvas
-</button>
-
+<!-- sort -->
 <div
   class="offcanvas offcanvas-bottom offcanvas-rounded-top"
   tabindex="-1"
-  id="offcanvasBottom"
+  id="offcanvasBottomSort"
   aria-labelledby="offcanvasBottomLabel"
   data-bs-scroll="true"
-  style="height: 50vh"
+  style="height: 27vh"
 >
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title h5 fw-bold text-center w-100" id="offcanvasBottomLabel">
+      <i class="fa-solid fa-arrow-down-wide-short me-2"></i>排序
+    </h5>
     <button
       type="button"
       class="btn-close text-reset"
@@ -861,14 +871,200 @@
     ></button>
   </div>
   <div class="offcanvas-body">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed illum tenetur odit nam error
-    aspernatur unde. Esse, debitis? Unde libero est recusandae facilis perferendis pariatur, labore
-    illum enim minus eveniet ea odio doloribus temporibus ducimus voluptas ab omnis vel, tenetur
-    minima iure sequi? Accusantium culpa reiciendis sed ipsa voluptas inventore, hic earum ab quod
-    illo laudantium porro, fuga quos dicta explicabo dolore odit dolorum a magnam. Cum quaerat quam
-    tempora. Amet quo fugiat expedita explicabo sapiente atque aliquam? Vero libero commodi,
-    doloribus laudantium ducimus reiciendis quasi aliquid molestias repudiandae ullam, veniam
-    maiores itaque rem hic. Earum culpa quasi similique animi.
+    <form class="px-1">
+      <div class="form-check mb-4">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="sort"
+          value="bookstore"
+          id="bookstore-offcanvas"
+          checked
+        />
+        <label class="form-check-label" for="bookstore-offcanvas">依書店排序</label>
+      </div>
+      <div class="form-check mb-4">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="sort-by-time"
+          id="last-to-first-offcanvas"
+          value="last-to-first"
+          checked
+        />
+        <label class="form-check-label" for="last-to-first-offcanvas"> 加入時間（新到舊） </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="sort-by-time"
+          id="first-to-last-offcanvas"
+          value="first-to-last"
+        />
+        <label class="form-check-label" for="first-to-last-offcanvas">加入時間（舊到新）</label>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- filter  -->
+<div
+  class="offcanvas offcanvas-bottom offcanvas-rounded-top"
+  tabindex="-1"
+  id="offcanvasBottomFilter"
+  aria-labelledby="offcanvasBottomLabe2"
+  data-bs-scroll="true"
+  style="height: 40vh"
+>
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title h5 fw-bold text-center w-100" id="offcanvasBottomLabe2">
+      <i class="fa-solid fa-filter me-2"></i>選擇書店
+    </h5>
+    <button
+      type="button"
+      class="btn-close text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body">
+    <form class="d-flex px-3 gap-7">
+      <div class="form-check form-switch mb-4 d-none">
+        <input class="form-check-input" type="checkbox" role="switch" id="select-all" checked />
+        <label class="form-check-label" for="select-all">全選</label>
+      </div>
+      <div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="books"
+            id="books-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="books-offcanvas">博客來</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="readmoo"
+            id="readmoo-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="readmoo-offcanvas">Readmoo 讀墨</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="GooglePlay"
+            id="GooglePlay-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="GooglePlay-offcanvas">Google Play 圖書</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="kobo"
+            id="kobo-offcanvas"
+          />
+          <label class="form-check-label" for="kobo-offcanvas">樂天 kobo</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="BookWalker"
+            id="BookWalker-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="BookWalker-offcanvas">BOOK WALKER</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="Taaze"
+            id="Taaze-offcanvas"
+          />
+          <label class="form-check-label" for="Taaze-offcanvas">TAAZE 讀冊生活</label>
+        </div>
+      </div>
+      <div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="Hami"
+            id="Hami-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="Hami-offcanvas">Hami 書城</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="Pubu"
+            id="Pubu-offcanvas"
+          />
+          <label class="form-check-label" for="Pubu-offcanvas">Pubu 飽讀</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="udn"
+            id="udn-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="udn-offcanvas">udn 讀書吧</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="MyBook"
+            id="MyBook-offcanvas"
+            checked
+          />
+          <label class="form-check-label" for="MyBook-offcanvas">MyBook 書城</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="HyRead-offcanvas"
+            id="HyRead-offcanvas"
+          />
+          <label class="form-check-label" for="HyRead-offcanvas">HyRead 電子書</label>
+        </div>
+        <div class="form-check mb-4">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="bookstore-filter"
+            value="AmazonKindle"
+            id="AmazonKindle-offcanvas"
+          />
+          <label class="form-check-label" for="AmazonKindle-offcanvas">Amazon Kindle</label>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 <!-- offcanvas end -->
