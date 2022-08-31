@@ -17910,4 +17910,8 @@ button:hover {
   color: #fff;
 }
 
+.offcanvas-rounded-top {
+  border-radius: 20px 20px 0 0;
+}
+
 /*# sourceMappingURL=all.css.map */
