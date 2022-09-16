@@ -14,7 +14,7 @@ AOS.init({
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 1000, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
+  once: true, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 });
@@ -47,6 +47,85 @@ navbarToggler.addEventListener('click', (e) => {
 //     navbar.classList.remove('bg-primary');
 //   }
 // });
+
+// 讀者好評 swiper
+function commentSwiper() {
+  const swiper = new Swiper('#comment-swiper', {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+      delay: 2000,
+    },
+    slidesPerView: 1,
+    /* 斷點設定 */
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+    spaceBetween: 24,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}
+commentSwiper();
+
+// 熱門搜尋 swiper
+function searchSwiper() {
+  const swiper = new Swiper('#search-swiper', {
+    loop: true,
+    speed: 2000,
+    autoplay: {
+      delay: 4000,
+    },
+    slidesPerView: 1,
+    /* 斷點設定 */
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+    spaceBetween: 24,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+}
+searchSwiper();
+
+//常見問題
+$(document).ready(function () {
+  $('.fa').click(function (e) {
+    e.preventDefault();
+    //本身樣式：
+    $(this).find('h3').toggleClass('mb-4 text-secondary fw-bold');
+    $(this).find('.fa-plus').toggleClass('d-none');
+    $(this).find('.fa-minus').toggleClass('d-none');
+    // $(this).siblings('p').slideToggle();
+    $(this).siblings('p').toggleClass('d-none');
+    //另外兩個樣式需要關閉：
+    // $(this).parent().siblings().find('h3').removeClass('mb-6 text-secondary fw-bold');
+    // $(this).parent().siblings().find('.fa-minus').addClass('d-none');
+    // $(this).parent().siblings().find('.fa-plus').removeClass('d-none');
+    // $(this).parent().siblings().find('p').slideUp();
+    // $(this).parent().siblings().find('p').removeClass('d-none');
+  });
+});
 
 // bookmark 開關
 $(document).ready(() => {

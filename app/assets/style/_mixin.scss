@@ -23,3 +23,10 @@
     @content;
   }
 }
+@mixin bg-cover($url, $height) {
+  background-image: url($url);
+  height: $height;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

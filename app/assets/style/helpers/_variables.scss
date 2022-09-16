@@ -63,6 +63,7 @@ $colors: (
   'white': $white,
   'gray': $gray-600,
   'gray-dark': $gray-800,
+  'gray-200': $gray-200,
 ) !default;
 // scss-docs-end colors-map
 
@@ -75,7 +76,7 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: #e3dcd6 !default; //$gray-100
 $dark: $gray-900 !default;
-
+$gray: $gray-600 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -90,6 +91,7 @@ $theme-colors: (
   'dark': $dark,
   'white': $white,
   'lightgray': #a0a0a0,
+  'gray': #6c757d,
 ) !default;
 // scss-docs-end theme-colors-map
 

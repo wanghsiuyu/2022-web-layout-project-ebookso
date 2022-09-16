@@ -24,7 +24,7 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style/all.css" />
@@ -65,11 +65,6 @@
             <li class="nav-item text-center">
               <a class="nav-link px-md-5" aria-current="page" href="./bookcase.html">我的書櫃</a>
             </li>
-            <!-- <li class="nav-link ps-0 pe-0 d-none d-md-block">|</li>
-            <li class="nav-item text-center">
-              <a class="nav-link px-md-5" href="./signup.html">註冊</a
-                ></a>
-            </li> -->
             <li class="nav-link ps-0 pe-0 d-none d-md-block">|</li>
             <li class="nav-item text-center">
               <a class="nav-link ps-md-5 pe-md-0" href="./login.html"
@@ -85,7 +80,7 @@
               aria-label="Search"
             />
             <a
-              class="btn btn-outline-white"
+              class="btn btn-outline-white me-2"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
             >
@@ -147,8 +142,7 @@
         </div>
       </section>
       <!-- banner end -->
-      <!-- feature start -->
-      <!-- 10 家電子書平台 -->
+      <!-- 10 家電子書平台 start-->
       <section class="container-md-fluid mb-10 mb-md-18 position-md-relative height-md-475">
         <div class="container h-100">
           <div class="row justify-content-md-end align-items-center h-100">
@@ -179,7 +173,8 @@
           ></div>
         </div>
       </section>
-      <!-- 線上打造專屬書櫃 -->
+      <!-- 10 家電子書平台 end-->
+      <!-- 線上打造專屬書櫃 start-->
       <section class="container-md-fluid mb-20 mb-md-18 position-md-relative height-md-475">
         <div class="container h-100">
           <div class="row align-items-center h-100">
@@ -213,15 +208,404 @@
           ></div>
         </div>
       </section>
-      <!-- feature end -->
-      <!-- steps start -->
+      <!-- 線上打造專屬書櫃 end-->
+      <!-- 讀者好評 start -->
+      <div class="comment-bg">
+        <h2 class="h3 fw-bold text-white text-center pt-20 pb-8 pb-md-12" data-aos="fade-up">
+          讀者一致好評推薦
+        </h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10" data-aos="fade-up" data-aos-delay="200">
+              <div class="swiper" id="comment-swiper">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide list-unstyled position-relative card border-0 box-shadow">
+                    <div
+                      class="position-absolute top-0 text-secondary"
+                      style="left: 24px; transform: translateY(-40%)"
+                    >
+                      <i class="fas fa-quote-left fs-3 text-secondary"></i>
+                    </div>
+                    <div
+                      class="card-body pt-9 pb-6 px-8 px-md-8 d-flex flex-column justify-content-between"
+                    >
+                      <p class="mb-4 mb-md-6 text-justify">
+                        很好用！可以自行設定只查詢某幾間的電子書，在使用上比其他查價平台更加方便。
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./assets/images/comment-avatar01.png"
+                          class="me-4"
+                          alt="avatar"
+                          width="76"
+                          height="76"
+                        />
+                        <div class="">
+                          <p class="mb-2">Jenny Lin</p>
+                          <div class="">
+                            <i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6" style="color: #ffd153"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide list-unstyled position-relative card border-0 box-shadow">
+                    <div
+                      class="position-absolute top-0 text-secondary"
+                      style="left: 24px; transform: translateY(-40%)"
+                    >
+                      <i class="fas fa-quote-left fs-3 text-secondary"></i>
+                    </div>
+                    <div
+                      class="card-body pt-9 pb-6 px-8 px-md-8 d-flex flex-column justify-content-between"
+                    >
+                      <p class="mb-4 mb-md-6 text-justify">
+                        可以在搜尋時順便將買過的書加入我的書櫃，另外還可加入待買清單，真的太讚啦！
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./assets/images/comment-avatar02.png"
+                          class="me-4"
+                          alt="avatar"
+                          width="76"
+                          height="76"
+                        />
+                        <div class="">
+                          <p class="mb-2">Vincent Cheng</p>
+                          <div class="">
+                            <i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6" style="color: #ffd153"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide list-unstyled position-relative card border-0 box-shadow">
+                    <div
+                      class="position-absolute top-0 text-secondary"
+                      style="left: 24px; transform: translateY(-40%)"
+                    >
+                      <i class="fas fa-quote-left fs-3 text-secondary"></i>
+                    </div>
+                    <div
+                      class="card-body pt-9 pb-6 px-8 px-md-8 d-flex flex-column justify-content-between"
+                    >
+                      <p class="mb-4 mb-md-6 text-justify">
+                        搜尋結果可以快速連結到各電子書平台購買頁面，非常貼心！
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./assets/images/comment-avatar03.png"
+                          class="me-4"
+                          alt="avatar"
+                          width="76"
+                          height="76"
+                        />
+                        <div class="">
+                          <p class="mb-2">Christina Gao</p>
+                          <div class="">
+                            <i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6" style="color: #ffd153"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide list-unstyled position-relative card border-0 box-shadow">
+                    <div
+                      class="position-absolute top-0 text-secondary"
+                      style="left: 24px; transform: translateY(-40%)"
+                    >
+                      <i class="fas fa-quote-left fs-3 text-secondary"></i>
+                    </div>
+                    <div
+                      class="card-body pt-9 pb-6 px-8 px-md-8 d-flex flex-column justify-content-between"
+                    >
+                      <p class="mb-4 mb-md-6 text-justify">
+                        介面優美，搜尋方便，重點是免費還無廣告，我還不推爆！
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./assets/images/comment-avatar04.png"
+                          class="me-4"
+                          alt="avatar"
+                          width="76"
+                          height="76"
+                        />
+                        <div class="">
+                          <p class="mb-2">Joseph Ren</p>
+                          <div class="">
+                            <i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6" style="color: #ffd153"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide list-unstyled position-relative card border-0 box-shadow">
+                    <div
+                      class="position-absolute top-0 text-secondary"
+                      style="left: 24px; transform: translateY(-40%)"
+                    >
+                      <i class="fas fa-quote-left fs-3 text-secondary"></i>
+                    </div>
+                    <div
+                      class="card-body pt-9 pb-6 px-8 px-md-8 d-flex flex-column justify-content-between"
+                    >
+                      <p class="mb-4 mb-md-6 text-justify">
+                        這是我看過支援最多電子書平台的比價網站，再也不需要到各平台查價，推薦使用！
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./assets/images/comment-avatar05.png"
+                          class="me-4"
+                          alt="avatar"
+                          width="76"
+                          height="76"
+                        />
+                        <div class="">
+                          <p class="mb-2">Wandy Liang</p>
+                          <div class="">
+                            <i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6" style="color: #ffd153"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide list-unstyled position-relative card border-0 box-shadow">
+                    <div
+                      class="position-absolute top-0 text-secondary"
+                      style="left: 24px; transform: translateY(-40%)"
+                    >
+                      <i class="fas fa-quote-left fs-3 text-secondary"></i>
+                    </div>
+                    <div
+                      class="card-body pt-9 pb-6 px-8 px-md-8 d-flex flex-column justify-content-between"
+                    >
+                      <p class="mb-4 mb-md-6 text-justify">
+                        開發者非常用心，有問題會立即回覆而且很快就修復錯誤。
+                      </p>
+                      <div class="d-flex align-items-center">
+                        <img
+                          src="./assets/images/comment-avatar06.png"
+                          class="me-4"
+                          alt="avatar"
+                          width="76"
+                          height="76"
+                        />
+                        <div class="">
+                          <p class="mb-2">Chris Wu</p>
+                          <div class="">
+                            <i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6 me-1" style="color: #ffd153"></i
+                            ><i class="fa-solid fa-star fs-6" style="color: #ffd153"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 讀者好評 end -->
+      <!-- 熱門搜尋 start -->
+      <section class="py-10 py-md-20">
+        <h2 class="h3 text-center lh-base fw-bold mb-2 mb-md-6" data-aos="fade-up">熱門搜尋</h2>
+        <div class="px-3 px-md-0" data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper" id="search-swiper">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/21.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">
+                      文藝少女的矽谷進擊
+                    </h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 王文珮 Vanessa Wang</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：時報出版</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      一手泡奶、一手coding！工程師媽媽已上線！
+                      喜愛寫作，對數理有興趣，更享受解決問題的快感！
+                      寫Code之餘不忘寫文章，當媽之餘還當了工程師！
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">268</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/24.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">
+                      蛤蟆先生去看心理師
+                    </h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 羅伯．狄保德</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：三采</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      心理諮商創舉，取材自英國童話《柳林中的風聲》完美結合心理學的經典之作。只要我們的情緒真正獲得理解，就能有成長的機會。
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">246</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/22.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">
+                      從 Hooks 開始，讓你的...
+                    </h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 陳柏融</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：博碩</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      第一本整合線下內容與線上社群的 React 實體書，再也不怕沒人解惑 從 Hooks
+                      開始上手 React，大幅降低陡峭的 React 學習曲線。
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">520</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/20.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">82年生的金智英</h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 趙南柱</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：漫遊者文化</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      你們可以對一切都覺得理所當然，我卻再也沒辦法繼續忍氣吞聲。可是我只有變成別人，才能為自己說話。我是金智英，1982年生。
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">180</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/19.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">
+                      0 陷阱！0 誤解！8 天重新...
+                    </h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 許國政</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：博碩</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      iT邦幫忙鐵人賽系列書。本書內容主要針對剛接觸JavaScript或者對JavaScript不是那麼熟悉的讀者，說明JavaScript的基礎與常見的誤區。
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">352</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/07.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">最高學以致用法</h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 樺澤紫苑</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：春天出版社</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      暢銷突破60萬冊！想要更有效地學習，應該讀更多書，聽更多演講？精神科醫生、暢銷作家樺澤紫苑的答案是，錯，你需要更多的活用！
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">260</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide list-unstyled card border-0 box-shadow">
+                <div class="card-body d-md-flex px-8 py-7">
+                  <img
+                    src="./assets/images/11.jpg"
+                    class="search-swiper-img mb-4 mb-md-0 me-md-6"
+                    alt="book-img"
+                  />
+                  <div class="d-flex flex-column">
+                    <h5 class="h5 h4-md fw-bold mb-3 text-center text-md-start">為什麼要睡覺？</h5>
+                    <h6 class="d-none d-md-block mb-2">作者： 沃克</h6>
+                    <h6 class="d-none d-md-block mb-6">出版社：天下文化</h6>
+                    <p class="border-start ps-3 text-gray text-justify">
+                      缺乏睡眠成為全球流行病的今天，我們需要作者傳授的睡眠全書。這本書總結數十年來的睡眠研究成果，告訴我們睡眠複雜又迷人的真相。
+                    </p>
+                    <div class="text-center text-md-start mt-auto">
+                      <i class="fa-solid fa-file-invoice-dollar text-lightgray me-2"></i
+                      ><span class="text-danger h3 fw-bold lh-base">304</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 熱門搜尋 end -->
+      <!-- 三步驟 start -->
       <section class="steps bg-cover py-20">
-        <h2
-          class="h3 h2-md text-center lh-base fw-bold text-white pb-10 pb-md-12"
-          data-aos="fade-up"
-        >
-          只要三步驟<span class="d-none d-md-inline-block">，</span
-          ><br class="d-md-none" />輕鬆打造個人專屬書櫃
+        <h2 class="h3 text-center lh-base fw-bold text-white pb-10 pb-md-12" data-aos="fade-up">
+          輕鬆三步驟<span class="d-none d-md-inline-block">，</span
+          ><br class="d-md-none" />立即打造個人專屬書櫃
         </h2>
         <div class="container">
           <div class="row justify-content-center mb-12">
@@ -273,7 +657,156 @@
           >
         </div>
       </section>
-      <!-- steps end -->
+      <!-- 三步驟 end -->
+      <!-- 常見問題 start -->
+      <section class="py-20">
+        <h2 class="h3 text-center lh-base fw-bold mb-8 mb-md-12" data-aos="fade-right">常見問題</h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7">
+              <div class="accordion accordion-flush d-flex flex-column gap-3" id="accordionExample">
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="100">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed gap-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="false"
+                      aria-controls="collapseOne"
+                    >
+                      我想要搜尋的價格由低至高排列，請問要如何設定？
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      我們的搜尋排序一律是依照價格由低至高排列，所以不需要特別設定喔！
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="200">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed gap-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      請問一定要加入會員，才能使用「我的書櫃」功能嗎？
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      是的，但是別擔心，加入會員是免費的，您也可以使用 Google 或 Facebook 快速註冊。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="300">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed gap-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      某一家電子平台搜尋沒有結果，請問我可以透過何種方式反應問題？
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      如果使用上有任何問題，或是想許願新的功能，歡迎填寫下方「聯絡我們」表單與我們聯絡。
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item" data-aos="fade-right" data-aos-delay="400">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed gap-2"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      你們的搜尋功能很好用，請問你們會在 Google Play 或 App Store 上架嗎？
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      很抱歉，目前開發人員人力有限，所以暫時沒有開發 APP
+                      的計劃，若是未來有相關計畫會在網站上公佈。您也可以嘗試將本網頁
+                      在手機桌面加入網站捷徑。
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 常見問題 end -->
+      <!-- 聯絡我們 start-->
+      <section class="contact-bg py-20">
+        <h2 class="h3 text-center text-white lh-base fw-bold mb-8 mb-md-12" data-aos="fade-up">
+          聯絡我們
+        </h2>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-5">
+              <div class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                <label for="nickname" class="form-label text-white">姓名</label>
+                <input type="text" class="form-control" id="nickname" placeholder="如何稱呼您" />
+              </div>
+              <div class="mb-3" data-aos="fade-up" data-aos-delay="200">
+                <label for="email" class="form-label text-white">電子郵件</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="請輸入您的電子信箱"
+                />
+              </div>
+              <div class="mb-7" data-aos="fade-up" data-aos-delay="300">
+                <label for="introduction" class="form-label text-white">問題反應</label>
+                <textarea
+                  class="form-control"
+                  id="introduction"
+                  style="height: 150px; resize: none"
+                  placeholder="請詳細描述您的問題或有任何建議也歡迎告訴我們"
+                ></textarea>
+              </div>
+              <div class="d-grid gap-2 col-md-3 mx-auto" data-aos="fade-up" data-aos-delay="400">
+                <button class="btn btn-secondary text-white" type="button">確認送出</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 聯絡我們 end-->
     </main>
     <!-- footer start  -->
     <footer class="bg-primary py-6 py-md-12">
@@ -406,10 +939,10 @@
       </div>
     </section>
     <!-- 選擇書店 Modal end-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 </html>

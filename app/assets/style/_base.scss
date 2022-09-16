@@ -5,6 +5,7 @@ a:hover {
   transition: all 0.3s ease;
   opacity: 0.9;
 }
+
 button:hover {
   transition: all 0.3s ease;
   opacity: 0.9;
@@ -29,6 +30,9 @@ button:hover {
 .rounded-8 {
   border-radius: 8px;
 }
+.rounded-16 {
+  border-radius: 16px;
+}
 .bg-cover {
   background-position: center;
   background-size: cover;
@@ -48,21 +52,31 @@ button:hover {
   }
 }
 .fs-12 {
-  font-size: 12px;
+  font-size: 12px !important;
+}
+.fs-md-44 {
+  @include mobile() {
+    font-size: 44px !important;
+  }
+}
+.h1-md {
+  @include mobile() {
+    font-size: $h1-font-size !important;
+  }
 }
 .h2-md {
   @include mobile() {
-    font-size: $h2-font-size;
+    font-size: $h2-font-size !important;
   }
 }
 .h4-md {
   @include mobile() {
-    font-size: $h4-font-size;
+    font-size: $h4-font-size !important;
   }
 }
 .h6-md {
   @include mobile() {
-    font-size: $h6-font-size;
+    font-size: $h6-font-size !important;
   }
 }
 
@@ -91,4 +105,10 @@ button:hover {
   @include mobile() {
     background-color: $white !important;
   }
+}
+.text-justify {
+  text-align: justify;
+}
+.text-gray {
+  color: $gray;
 }

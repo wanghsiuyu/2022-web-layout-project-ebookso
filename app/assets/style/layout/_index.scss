@@ -1,3 +1,4 @@
+//navbar start
 .logo {
   background-image: url(../images/logo-sm.png);
   width: 106px;
@@ -12,6 +13,9 @@
     height: 44px;
   }
 }
+//navbar end
+
+//banner start
 .banner {
   background-image: url(../images/banner-sm.png);
   width: 100%;
@@ -19,6 +23,7 @@
   background-size: cover;
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-color: rgba(93, 93, 93, 0.53);
   background-blend-mode: multiply;
   @include pad() {
     background-image: url(../images/banner-lg-fix-wide.jpg);
@@ -28,12 +33,64 @@
     background-color: rgba(93, 93, 93, 0.586);
   }
 }
-
+//banner end
 .height-md-475 {
   @include mobile() {
     height: 475px;
   }
 }
+//讀者好評 start
+.comment-bg {
+  @include bg-cover('../images/comment-bg.jpg', 300px);
+  @include mobile() {
+    height: 320px;
+  }
+  background-color: rgba(93, 93, 93, 0.924);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  margin-bottom: 180px;
+}
+/* swiper*/
+:root {
+  --swiper-theme-color: #224935;
+}
+.swiper {
+  padding: 24px 0 0 0;
+}
+.swiper-wrapper {
+  padding: 0;
+}
+.swiper-slide {
+  height: initial;
+}
+.swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 8px;
+}
+.swiper-pagination {
+  position: static;
+  margin-top: 24px;
+}
+//讀者好評 end
+
+//熱門搜尋 start
+.search-swiper-img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0px 6px #00000014;
+  border-radius: 8px;
+  object-fit: contain;
+  width: 90px;
+  height: 120px;
+  margin-bottom: 4px;
+  @include mobile() {
+    width: 233px;
+    height: 310px;
+  }
+}
+//熱門搜尋 end
+
+//三步驟 start
 .steps {
   background-image: url(../images/bookcase-plant.jpg);
   height: 100%;
@@ -48,3 +105,38 @@
     transition: all 0.3s ease-out;
   }
 }
+//三步驟 end
+
+//常見問題 start
+.accordion-button:not(.collapsed) {
+  color: $secondary;
+  background-color: white;
+  font-weight: bold;
+  @include mobile() {
+    font-size: 20px;
+  }
+}
+.accordion-button {
+  color: $primary;
+  background-color: white;
+  @include mobile() {
+    font-size: 20px;
+  }
+}
+.accordion-item {
+  border: 1px solid transparent;
+}
+//常見問題 end
+
+//聯絡我們 start
+.contact-bg {
+  @include bg-cover('../images/contact-bg.jpg', auto);
+  @include mobile() {
+    height: auto;
+  }
+  background-position: center bottom;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+}
+//聯絡我們 end
